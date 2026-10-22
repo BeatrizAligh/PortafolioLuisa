@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CV Luisa Leaccott — Creative Technologist</title>
+<!--
+  VERSIÓN CON DISEÑO (para enviar directo por correo, en tu web o en mano).
+  Sigue la identidad de tu portafolio:
+  - Paleta: violeta profundo #100b31 / #231a4b, violeta #9e72ff, cian #93eeff, tinta #f8f6ff.
+  - Tipografía: Bebas Kai para títulos (como "UNITY GAMEPLAY DEVELOPER") y Nunito para texto.
+  - Detalles de "órbita" y brillo, como en el hero del sitio, pero contenidos para que no compitan con el texto.
+  Estructura: barra lateral oscura (quién soy + herramientas) y columna clara (experiencia).
+  La columna clara se mantiene clara a propósito: se lee mejor y gasta menos tinta si alguien la imprime.
+-->
+<style>
+  /* ---------- Fuentes del portafolio ---------- */
+  @font-face { font-family: "Bebas Kai"; src: url("Fonts/BebasKai.otf"); }
+  @font-face { font-family: "Nunito"; src: url("Fonts/Nunito-Regular.ttf"); font-weight: 400; }
+  @font-face { font-family: "Nunito"; src: url("Fonts/Nunito-Italic.ttf"); font-weight: 400; font-style: italic; }
+  @font-face { font-family: "Nunito"; src: url("Fonts/Nunito-SemiBold.ttf"); font-weight: 600; }
+  @font-face { font-family: "Nunito"; src: url("Fonts/Nunito-Bold.ttf"); font-weight: 700; }
+  @font-face { font-family: "Nunito"; src: url("Fonts/Nunito-ExtraBold.ttf"); font-weight: 800; }
+
+  /* ---------- Tokens de color ---------- */
+  :root {
+    --deep: #100b31;      /* fondo más oscuro del sitio */
+    --deep-2: #231a4b;    /* segundo tono del degradado */
+    --violet: #9e72ff;    /* acento principal */
+    --violet-ink: #5d37a8;/* violeta legible sobre fondo claro */
+    --cyan: #93eeff;      /* acento frío, se usa poco: solo detalles */
+    --light: #f8f6ff;     /* texto sobre oscuro */
+    --lilac: #d4cfec;     /* texto secundario sobre oscuro */
+    --ink: #1b1636;       /* texto sobre claro */
+    --muted: #5a5378;     /* texto secundario sobre claro */
+    --paper: #fbfaff;     /* fondo de la columna clara: blanco con un toque lila */
+    --line: #e2dbf5;
+  }
+
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  /* print-color-adjust obliga al navegador a imprimir los fondos */
+  html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: "Nunito", sans-serif; font-size: 8.9pt; line-height: 1.4; color: var(--ink); }
+
+  /* Página: rejilla de dos columnas (barra lateral 34% / contenido 66%) */
+  .page { width: 8.5in; height: 11in; display: grid; grid-template-columns: 2.75in 1fr; overflow: hidden; }
+
+  /* =================== BARRA LATERAL =================== */
+  .side {
+    position: relative; overflow: hidden;
+    background: linear-gradient(165deg, var(--deep-2) 0%, var(--deep) 62%);
+    color: var(--light); padding: 0.5in 0.32in 0.4in 0.4in;
+  }
+  /* Órbitas decorativas: guiño al hero animado del portafolio */
+  .orbit { position: absolute; border: 1px solid rgba(221,210,255,.28); border-radius: 50%; pointer-events: none; }
+  .orbit--a { width: 2.6in; height: 2.6in; right: -1.15in; top: -0.9in; }
+  .orbit--b { width: 1.8in; height: 1.8in; right: -0.75in; top: -0.5in; border-style: dashed; border-color: rgba(221,210,255,.22); }
+  .sun { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: #fff;
+         right: 0.55in; top: 0.86in; box-shadow: 0 0 8px #fff, 0 0 18px var(--violet); }
+
+  .logo { width: 30px; display: block; margin-bottom: 14pt; position: relative; }
+  .name { font-family: "Bebas Kai", sans-serif; font-size: 34pt; line-height: .92; letter-spacing: .04em;
+          text-shadow: 0 0 12px rgba(158,114,255,.55); position: relative; }
+  .tagline { margin-top: 7pt; font-size: 7.4pt; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; color: var(--cyan); }
+
+  /* Títulos de la barra lateral */
+  .side h3 { font-family: "Bebas Kai", sans-serif; font-weight: 400; font-size: 13pt; letter-spacing: .14em;
+             margin: 17pt 0 6pt; display: flex; align-items: center; gap: 6pt; }
+  /* Puntito brillante antes del título (como las etiquetas del hero) */
+  .side h3::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #fff; box-shadow: 0 0 6px #fff, 0 0 12px var(--violet); }
+
+  .contact { list-style: none; }
+  .contact li { margin-bottom: 5pt; font-size: 8.2pt; }
+  .contact small { display: block; font-size: 6.6pt; letter-spacing: .18em; text-transform: uppercase; color: var(--lilac); opacity: .8; }
+  .contact a { color: var(--light); text-decoration: none; }
+
+  /* Habilidades como "pastillas" con borde luminoso */
+  .chips { display: flex; flex-wrap: wrap; gap: 3.5pt; }
+  .chips span { border: 1px solid rgba(238,228,255,.55); border-radius: 999px; padding: 1.5pt 6.5pt;
+                font-size: 7.3pt; color: var(--light); background: rgba(158,114,255,.12); }
+  .chips--soft span { border-color: rgba(238,228,255,.25); background: transparent; color: var(--lilac); }
+  .group-label { font-size: 6.6pt; letter-spacing: .18em; text-transform: uppercase; color: var(--lilac); margin: 7pt 0 3.5pt; opacity: .85; }
+
+  .side p { font-size: 8pt; color: var(--lilac); }
+  .side p b { color: var(--light); font-weight: 700; }
+
+  /* =================== COLUMNA PRINCIPAL =================== */
+  .main { background: var(--paper); padding: 0.5in 0.5in 0.4in 0.42in; }
+
+  .main h2 { font-family: "Bebas Kai", sans-serif; font-weight: 400; font-size: 16pt; letter-spacing: .12em;
+             color: var(--deep-2); margin: 15pt 0 7pt; display: flex; align-items: center; gap: 8pt; }
+  .main h2:first-child { margin-top: 0; }
+  /* Línea que se desvanece después del título: separa sin pesar */
+  .main h2::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--violet), transparent); opacity: .55; }
+
+  .summary { font-size: 9.4pt; line-height: 1.5; color: #2c2650; }
+  .summary b { color: var(--violet-ink); }
+
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+  .job-head strong { font-size: 10.2pt; font-weight: 800; }
+  .date { font-size: 7.6pt; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--violet-ink);
+          border: 1px solid var(--line); border-radius: 999px; padding: 1pt 7pt; white-space: nowrap; background: #fff; }
+  .company { color: var(--muted); font-weight: 600; margin: 1pt 0 4pt; }
+
+  .main ul { padding-left: 11pt; margin-bottom: 6pt; }
+  .main li { margin-bottom: 2.6pt; }
+  .main li::marker { content: "✦  "; color: var(--violet); font-size: 7pt; }
+
+  /* Tarjetas de proyecto: eco de las tarjetas del portafolio, versión clara */
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 7pt; }
+  .card { border: 1px solid var(--line); border-radius: 9px; padding: 7pt 9pt; background: #fff; }
+  .card h4 { font-family: "Bebas Kai", sans-serif; font-weight: 400; font-size: 12.5pt; letter-spacing: .08em; color: var(--deep-2); }
+  .card .meta { font-size: 7pt; letter-spacing: .14em; text-transform: uppercase; color: var(--violet-ink); font-weight: 700; margin-bottom: 2pt; }
+  .card p { font-size: 8.2pt; color: #3b3460; }
+  .card--wide { grid-column: 1 / -1; }
+
+  .edu { display: grid; gap: 6pt; }
+  .edu .company { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- =========== BARRA LATERAL =========== -->
+  <aside class="side">
+    <div class="orbit orbit--a"></div><div class="orbit orbit--b"></div><div class="sun"></div>
+
+    <img class="logo" src="Img/Logosvectores/LogoLuisa.svg" alt="Logo Luisa">
+    <div class="name">Luisa<br>Leaccott</div>
+    <div class="tagline">Creative Technologist</div>
+
+    <h3>Contacto</h3>
+    <ul class="contact">
+      <li><small>Correo</small><a href="mailto:luisaleaccott5@gmail.com">luisaleaccott5@gmail.com</a></li>
+      <li><small>WhatsApp</small>+57 300 767 7421</li>
+      <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/beatrizaligh/">linkedin.com/in/beatrizaligh</a></li>
+      <li><small>Juegos</small><a href="https://beatrizaligh.itch.io/">beatrizaligh.itch.io</a></li>
+      <li><small>Ubicación</small>Bogotá, Colombia</li>
+    </ul>
+
+    <h3>Habilidades</h3>
+    <div class="group-label">Desarrollo</div>
+    <div class="chips"><span>C#</span><span>Unity</span><span>JavaScript</span><span>TypeScript</span><span>HTML / CSS</span><span>Git</span></div>
+    <div class="group-label">Realidad aumentada</div>
+    <div class="chips"><span>8th Wall</span><span>A-Frame</span><span>Zappar</span><span>WebAR</span><span>Face &amp; hand tracking</span></div>
+    <div class="group-label">Diseño</div>
+    <div class="chips"><span>UI / UX</span><span>Figma</span><span>Game design</span><span>Diseño de niveles</span></div>
+    <div class="group-label">También uso</div>
+    <div class="chips chips--soft"><span>Aseprite</span><span>Godot</span><span>Roblox Studio</span><span>Python</span><span>IA generativa</span></div>
+
+    <h3>Idiomas</h3>
+    <p><b>Español</b> · nativo<br><b>Inglés</b> · A2, lectura técnica</p>
+
+    <h3>Game jams</h3>
+    <p>Women Game Jam · UNGames (U. Nacional) · U. de La Sabana · U. Militar Nueva Granada · U. Colegio Mayor de Cundinamarca</p>
+  </aside>
+
+  <!-- =========== COLUMNA PRINCIPAL =========== -->
+  <main class="main">
+
+    <h2>Perfil</h2>
+    <p class="summary">
+      Diseñadora Digital y Multimedia y desarrolladora con <b>más de dos años</b> creando experiencias interactivas y de
+      <b>realidad aumentada</b> para marcas como Coca-Cola, Claro, NYX, Alpina, HP y Dodge. Como <b>programadora principal</b>
+      llevo las ideas del concepto a producción: Unity (C#), WebAR, diagramación de interfaces y diseño de juego.
+      Uno criterio visual y pensamiento de sistemas para construir experiencias claras, funcionales y listas para publicar.
+    </p>
+
+    <h2>Experiencia</h2>
+    <div class="job-head"><strong>Desarrolladora — Programadora principal</strong><span class="date">2024 – Sep 2026</span></div>
+    <div class="company">Dardranight Studios · Bogotá</div>
+    <ul>
+      <li>Lideré la programación de <b>más de 15 proyectos</b> interactivos para marcas, asumiendo casi todo el desarrollo en un equipo de tres personas.</li>
+      <li>Desarrollé filtros y experiencias AR —face tracking, hand tracking, minijuegos y banners— para <b>Coca-Cola, Claro, NYX, Alpina, HP, Dodge y Todinnito</b> con 8th Wall, A-Frame, Zappar y Unity.</li>
+      <li>Resolví problemas de despliegue WebAR (SSL, CORS, SLAM) para dejar las experiencias estables en producción.</li>
+      <li>Construí sitios y experiencias web para <b>Audi</b> (chatbot), <b>Movistar 360</b>, Windmar y Flame Company con JavaScript y TypeScript.</li>
+      <li>Diagramé la UI de Ilumimochis (Alpina), Flame Company y HP, conectando el diseño con su implementación.</li>
+    </ul>
+
+    <h2>Proyectos de videojuego</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="meta">Unity · Game design · UI</div>
+        <h4>Último Ensayo</h4>
+        <p>Game design, diseño de niveles, programación, UI y sprites con apoyo de IA.</p>
+      </div>
+      <div class="card">
+        <div class="meta">Unity · Game design · UI</div>
+        <h4>Off Shore</h4>
+        <p>Proceso completo: investigación, niveles, programación, interfaz y sprites.</p>
+      </div>
+      <div class="card card--wide">
+        <div class="meta">Unity · Gameplay</div>
+        <h4>Magic Birthday</h4>
+        <p>Experiencia interactiva en Unity con diseño de mecánicas y programación de gameplay.</p>
+      </div>
+    </div>
+
+    <h2>Formación</h2>
+    <div class="edu">
+      <div>
+        <div class="job-head"><strong>Diseñadora Digital y Multimedia</strong><span class="date">2024</span></div>
+        <div class="company">[Institución]</div>
+      </div>
+      <div>
+        <div class="job-head"><strong>Diplomado en Diseño y Desarrollo de Videojuegos</strong><span class="date">Parcial</span></div>
+        <div class="company">Universidad Nacional de Colombia</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+</body>
+</html>

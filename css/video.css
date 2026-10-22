@@ -1,0 +1,29 @@
+/* Shared video slot (js/video.js) — follows the figcraft video frame: deep violet card, lilac border, glowing play ring */
+.vplayer{--vp-ratio:16/9;position:relative;width:100%;min-width:0}
+.vplayer--phone{--vp-ratio:9/19.5;max-width:360px;margin-inline:auto}
+.vplayer--wide{--vp-ratio:16/10}
+.vplayer__stage{position:relative;overflow:hidden;aspect-ratio:var(--vp-ratio);border:1.5px solid #c7a8f0;border-radius:24px;background:radial-gradient(circle at 88% 8%,rgba(122,92,255,.75),transparent 34%),linear-gradient(140deg,#2a1f5c,#1d1546 70%);box-shadow:0 0 22px rgba(209,183,255,.38),inset 0 0 24px rgba(255,255,255,.06);isolation:isolate}
+.vplayer--phone .vplayer__stage{border-radius:32px}
+.vplayer__stage video,.vplayer__poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#120c2c}
+.vplayer__poster{position:absolute;inset:0;display:block;width:100%;padding:0;border:0;background:none;cursor:pointer}
+.vplayer__poster img{object-fit:cover;transition:transform .7s ease,filter .5s ease;filter:saturate(1.02) brightness(.88)}
+.vplayer__poster:hover img,.vplayer__poster:focus-visible img{transform:scale(1.04);filter:brightness(1)}
+.vplayer__poster:focus-visible{outline:none}
+.vplayer__poster:focus-visible .vplayer__ring{box-shadow:0 0 0 3px #fff,0 0 30px #d7a6ff}
+.vplayer__ring{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:clamp(54px,7vw,76px);aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.12);box-shadow:0 0 0 2px #fff,0 0 22px rgba(255,255,255,.85),0 0 46px rgba(173,120,255,.9);transform:translate(-50%,-50%);backdrop-filter:blur(4px);transition:transform .35s ease}
+.vplayer__ring:before{content:"";position:absolute;inset:-12px;border:1.5px dashed rgba(255,255,255,.55);border-radius:50%;animation:vplayer-spin 14s linear infinite}
+.vplayer__ring svg{width:38%;fill:#fff;margin-left:8%;filter:drop-shadow(0 0 6px rgba(255,255,255,.8))}
+.vplayer__poster:hover .vplayer__ring{transform:translate(-50%,-50%) scale(1.08)}
+.vplayer__soon{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;padding:1.2rem;text-align:center;color:#fff}
+.vplayer__soon .vplayer__ring{position:relative;left:auto;top:auto;transform:none;margin-bottom:1.1rem;opacity:.9}
+.vplayer__soon strong{font-family:BebasKai,Impact,sans-serif;font-weight:400;font-size:clamp(1.2rem,2vw,1.6rem);letter-spacing:.14em;text-shadow:0 0 12px rgba(255,255,255,.5)}
+.vplayer__soon span{max-width:30ch;font-size:.82rem;line-height:1.4;opacity:.72}
+.vplayer--phone .vplayer__soon span{font-size:.76rem}
+.vplayer__chips{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:.9rem}
+.vplayer__chips button{padding:.5rem 1rem;border:1px solid rgba(255,255,255,.45);border-radius:999px;background:rgba(36,20,80,.55);color:#fff;font:700 .72rem/1 Nunito,sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:.25s}
+.vplayer__chips button[aria-selected=true]{background:#fff;color:#2b1863;box-shadow:0 0 16px rgba(231,198,255,.8)}
+.vplayer__chips button:hover{border-color:#fff}
+@keyframes vplayer-spin{to{transform:rotate(1turn)}}
+@media (prefers-reduced-motion:reduce){.vplayer__ring:before{animation:none}}
+@media (max-width:700px){.vplayer__stage{border-radius:16px}.vplayer--phone .vplayer__stage{border-radius:26px}}
+.vplayer--pixel video,.vplayer--pixel .vplayer__poster img{image-rendering:pixelated}

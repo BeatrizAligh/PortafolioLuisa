@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Luisa Leaccott, desarrolladora de videojuegos y creativa.">
+  <meta name="theme-color" content="#15103b">
+  <title>Luisa Leaccott — Creative Technologist</title>
+  <link rel="icon" type="image/svg+xml" href="Img/Logosvectores/LogoLuisa.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index-extra.css">
+</head>
+<body>
+  <div class="site-background" aria-hidden="true">
+    <div class="bg-layer bg-layer--1"></div>
+    <div class="bg-layer bg-layer--2"></div>
+    <div class="bg-layer bg-layer--3"></div>
+    <div class="bg-layer bg-layer--4"></div>
+    <div class="bg-layer bg-layer--5"></div>
+  </div>
+  <div class="loader" id="loader" aria-label="Cargando portafolio">
+    <div class="loader__terminal" aria-hidden="true"><span>&gt; LUISA.SYSTEM</span><span class="loader__bar"></span><span>INITIALIZING...</span></div>
+  </div>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="#intro" aria-label="Inicio"><img src="Img/Logosvectores/LogoLuisa.svg" alt=""></a>
+    <button class="language" id="languageButton" type="button" aria-label="Change language">EN</button>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="intro">
+      <div class="ambient ambient--one" aria-hidden="true"></div>
+      <nav class="social" aria-label="Redes sociales">
+        <a href="https://www.instagram.com/beatrizalighe/?hl=es" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="Img/Logosvectores/InstagramLogo.svg" alt=""></a>
+        <a href="https://www.behance.net/luisaleaccott1" target="_blank" rel="noreferrer" aria-label="Behance"><img src="Img/Logosvectores/behance.webp" alt=""></a>
+        <a href="https://github.com/BeatrizAligh" target="_blank" rel="noreferrer" aria-label="GitHub"><img src="Img/Logosvectores/github.webp" alt=""></a>
+      </nav>
+      <div class="hero__orbits" aria-hidden="true">
+        <span class="orbit orbit--outer"><i></i></span>
+        <span class="orbit orbit--middle"><i></i></span>
+        <span class="orbit orbit--inner"><i></i></span>
+        <span class="orbit-line"></span>
+        <span class="orbit-star">★</span>
+        <span class="orbit-sun"></span>
+      </div>
+      <div class="hero__copy reveal">
+        <h1 data-i18n="hero.title">Desarrolladora de videojuegos y creativa</h1>
+        <p class="signature" data-i18n="hero.name">Luisa Leaccott</p>
+        <p class="eyebrow hero__location" data-i18n="hero.location">Bogotá · Colombia</p>
+        <div class="hero__bio">
+          <p data-i18n="hero.bio1"></p>
+          <p data-i18n="hero.bio2"></p>
+        </div>
+        <div class="tags">
+          <span data-i18n="hero.tag1">Creative Technologist</span>
+          <span data-i18n="hero.tag2">Unity Gameplay Developer</span>
+        </div>
+      </div>
+      <img class="hero__portrait float" src="Img/LuisaFotos/LuisaCuerpocompleto.webp" alt="Retrato de Luisa Leaccott">
+      <div class="stats reveal" aria-label="Experiencia">
+        <article><strong data-count="4"><b>0</b></strong><span data-i18n="stats.unity">Años como Unity Dev</span></article>
+        <article><strong data-count="2.5"><b>0</b></strong><span data-i18n="stats.professional">Años de experiencia profesional</span></article>
+        <article><strong data-count="4"><b>0</b></strong><span data-i18n="stats.ar">Años como AR Dev</span></article>
+      </div>
+      <a class="scroll-cue" href="#portfolio"><span data-i18n="actions.scroll">Desliza para ver más</span><b>↓</b></a>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <header class="section-heading reveal">
+        <p class="eyebrow" data-i18n="portfolio.kicker">¿Qué deseas ver hoy?</p>
+        <h2 data-i18n="portfolio.title">Portafolio</h2>
+      </header>
+      <div class="crystal-stage reveal" id="crystalStage" aria-label="Categorías del portafolio"></div>
+      <article class="portfolio-detail glass reveal" aria-live="polite">
+        <p class="eyebrow" id="portfolioType">Unity Developer</p>
+        <h3 id="portfolioTitle">Unity Dev</h3>
+        <p id="portfolioDescription"></p>
+        <a class="button" id="portfolioLink" href="portfolio.html?category=unity"><span data-i18n="actions.more">Ver más</span> →</a>
+      </article>
+    </section>
+
+    <section class="skills section" id="skills">
+      <img class="skills__portrait reveal" src="Img/LuisaFotos/LuisaPaz.webp" alt="Ilustración de Luisa">
+      <div class="skills__content reveal">
+        <header class="section-heading section-heading--left"><p class="eyebrow" data-i18n="skills.kicker">Perfil técnico</p><h2 data-i18n="skills.title">Información de skills</h2></header>
+        <h3 data-i18n="skills.engines">Motores</h3>
+        <div class="icon-row" id="engineIcons"></div>
+        <div class="skill-copy" id="skillCopy"></div>
+        <h3 data-i18n="skills.tools">Herramientas y otros recursos</h3>
+        <div class="tool-grid" id="toolIcons"></div>
+        <div class="tech-groups" id="techGroups"></div>
+      </div>
+    </section>
+
+    <section class="constellation section" id="constellation">
+      <header class="section-heading reveal"><p class="eyebrow" data-i18n="constellation.kicker">Explora mi proceso</p><h2 data-i18n="constellation.title">Constelación de conocimiento</h2></header>
+      <div class="constellation__layout reveal">
+        <div class="star-map" id="starMap" role="group" aria-label="Mapa interactivo de conocimientos">
+          <svg class="star-lines star-lines--desktop" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none">
+            <path data-path="unity" d="M63 52 L90 52 M90 52 L76 13 M90 52 L76 78"/>
+            <path data-path="code" d="M42 25 L63 52 M42 25 L17 33"/>
+            <path data-path="ai" d="M12 12 L42 25"/>
+            <path data-path="ar" d="M76 13 L63 52 M76 13 L90 52"/>
+            <path data-path="game" d="M63 52 L76 78 M76 78 L90 52 M76 78 L62 88"/>
+            <path data-path="ui" d="M17 33 L42 25 M17 33 L15 68"/>
+            <path data-path="systems" d="M63 52 L42 25 M63 52 L42 70 M63 52 L76 13"/>
+            <path data-path="tools" d="M42 70 L63 52 M42 70 L15 68"/>
+            <path data-path="web" d="M15 68 L17 33 M15 68 L42 70"/>
+            <path data-path="vr" d="M29 86 L42 70"/>
+            <path data-path="shaders" d="M62 88 L42 70 M62 88 L76 78"/>
+          </svg>
+          <svg class="star-lines star-lines--mobile" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none">
+            <path data-path="unity" d="M50 11 L18 27 M50 11 L80 27 M50 11 L50 38"/>
+            <path data-path="code" d="M50 38 L30 57"/>
+            <path data-path="ai" d="M18 27 L30 57"/>
+            <path data-path="ar" d="M50 11 L70 57"/>
+            <path data-path="game" d="M50 38 L80 27 M80 27 L70 57"/>
+            <path data-path="ui" d="M30 57 L45 72 M45 72 L15 88"/>
+            <path data-path="systems" d="M50 11 L50 38 M50 38 L30 57 M50 38 L70 57"/>
+            <path data-path="tools" d="M70 57 L88 74"/>
+            <path data-path="web" d="M45 72 L15 88"/>
+            <path data-path="vr" d="M45 72 L62 88"/>
+            <path data-path="shaders" d="M62 88 L80 94"/>
+          </svg>
+          <button class="node node--center is-active" aria-label="Systems" style="--x:63%;--y:52%;--mx:50%;--my:38%" data-node="systems"><img src="Img/LogosPNG/SytemsLogo.png" alt=""><span>Systems</span></button>
+          <button class="node" aria-label="Unity" style="--x:90%;--y:52%;--mx:50%;--my:11%" data-node="unity"><img src="Img/LogosPNG/UnityLogo.png" alt=""><span>Unity</span></button>
+          <button class="node" aria-label="Game Design" style="--x:76%;--y:78%;--mx:80%;--my:27%" data-node="game"><img src="Img/LogosPNG/GameLogo.png" alt=""><span>Game Design</span></button>
+          <button class="node" aria-label="UI / UX" style="--x:17%;--y:33%;--mx:45%;--my:72%" data-node="ui"><img src="Img/LogosPNG/UILogo.png" alt=""><span>UI / UX</span></button>
+          <button class="node" aria-label="Code" style="--x:42%;--y:25%;--mx:30%;--my:57%" data-node="code"><img src="Img/LogosPNG/CodeLogo.png" alt=""><span>Code</span></button>
+          <button class="node node--minor" aria-label="Inteligencia artificial" style="--x:12%;--y:12%;--mx:18%;--my:27%" data-node="ai"><img src="Img/LogosPNG/IALogo.png" alt=""><span>IA</span></button>
+          <button class="node node--minor" aria-label="Realidad aumentada" style="--x:76%;--y:13%;--mx:70%;--my:57%" data-node="ar"><img src="Img/LogosPNG/ArLogo.png" alt=""><span>AR</span></button>
+          <button class="node node--minor" aria-label="Herramientas" style="--x:42%;--y:70%;--mx:88%;--my:74%" data-node="tools"><img src="Img/LogosPNG/PorceduraLogo.png" alt=""><span>Tools</span></button>
+          <button class="node node--minor" aria-label="Desarrollo web" style="--x:15%;--y:68%;--mx:15%;--my:88%" data-node="web"><img src="Img/LogosPNG/UXLogo.png" alt=""><span>Web</span></button>
+          <button class="node node--minor" aria-label="Realidad virtual" style="--x:29%;--y:86%;--mx:62%;--my:88%" data-node="vr"><img src="Img/LogosPNG/VRlogo.png" alt=""><span>VR</span></button>
+          <button class="node node--minor" aria-label="Shaders" style="--x:62%;--y:88%;--mx:80%;--my:94%" data-node="shaders"><img src="Img/LogosPNG/ShadersLogo.png" alt=""><span>Shaders</span></button>
+        </div>
+        <article class="constellation__detail glass" aria-live="polite"><p class="eyebrow" data-i18n="constellation.selected">Nodo seleccionado</p><h3 id="nodeTitle">Systems</h3><p id="nodeDescription"></p></article>
+      </div>
+      <img class="crystal-animal parallax" src="Img/LuisaFotos/Pintas.webp" alt="Ilustración de animal cristalino">
+    </section>
+
+
+    <section class="mission reveal" id="mission" aria-labelledby="missionMotto">
+      <p class="eyebrow" data-i18n="mission.kicker">Misión</p>
+      <p class="mission__text" data-i18n="mission.text"></p>
+      <p class="mission__motto" id="missionMotto" data-i18n="mission.motto">From Concept to Gameplay.</p>
+    </section>
+
+    <section class="personal section" id="about">
+      <header class="section-heading reveal"><p class="eyebrow" data-i18n="personal.kicker">Conoce más sobre mí</p><h2 data-i18n="personal.title">Disfruto desarrollar</h2></header>
+      <div class="personal__layout reveal">
+        <div class="wheel" id="personalWheel" role="tablist" aria-label="Información personal"></div>
+        <img class="personal__portrait float" src="Img/LuisaFotos/Luida en el aire.webp" alt="Ilustración de Luisa sentada">
+        <article class="personal__detail glass" aria-live="polite"><img id="personalIcon" src="Img/LogosPNG/DisfrutoLogo.png" alt=""><p class="eyebrow" id="personalLabel">Disfruto desarrollar</p><h3 id="personalHeading"></h3><p id="personalText"></p><p class="eyebrow personal__list-title" id="personalListTitle"></p><ul id="personalList"></ul></article>
+      </div>
+      <div class="contact reveal">
+        <a href="mailto:luisaleaccott5@gmail.com">luisaleaccott5@gmail.com</a>
+        <a href="tel:+573007677421">+57 300 767 7421</a>
+        <a class="button" href="PDF/CV_Luisa_Leaccott_Diseno.pdf" target="_blank" rel="noreferrer" data-i18n="actions.cv">Descargar CV</a>
+      </div>
+      <img class="clouds" src="Img/BG/Cloud.webp" alt="" aria-hidden="true">
+    </section>
+  </main>
+
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

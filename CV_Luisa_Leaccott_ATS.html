@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CV Luisa Leaccott — Creative Technologist (ATS)</title>
+<!--
+  VERSIÓN ATS (para portales de empleo: LinkedIn, Computrabajo, Magneto, etc.)
+  Reglas que sigue esta versión a propósito:
+  - Una sola columna: los lectores automáticos leen de arriba a abajo sin confundirse.
+  - Sin tablas, sin íconos, sin texto dentro de imágenes: todo es texto seleccionable.
+  - Títulos de sección estándar ("Experiencia", "Formación"...) que los ATS reconocen.
+  - Color solo como acento; si se imprime en blanco y negro sigue siendo legible.
+-->
+<style>
+  /* ---------- Fuentes: las mismas de tu portafolio para mantener coherencia ---------- */
+  @font-face { font-family: "Nunito"; src: url("Fonts/Nunito-Regular.ttf"); font-weight: 400; }
+  @font-face { font-family: "Nunito"; src: url("Fonts/Nunito-SemiBold.ttf"); font-weight: 600; }
+  @font-face { font-family: "Nunito"; src: url("Fonts/Nunito-Bold.ttf"); font-weight: 700; }
+  @font-face { font-family: "Nunito"; src: url("Fonts/Nunito-ExtraBold.ttf"); font-weight: 800; }
+
+  /* ---------- Tokens de color (tomados de tu styles.css) ---------- */
+  :root {
+    --ink: #1b1636;      /* texto principal: un violeta casi negro, más suave que #000 */
+    --muted: #4f4870;    /* texto secundario: fechas, lugares */
+    --accent: #5d37a8;   /* violeta de acento (el mismo del botón de scroll del sitio) */
+    --line: #d9d1f0;     /* líneas divisorias */
+  }
+
+  /* Tamaño carta (estándar en Colombia) y márgenes de impresión */
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #fff; color: var(--ink); font-family: "Nunito", Arial, sans-serif; font-size: 9.6pt; line-height: 1.38; }
+  .page { width: 8.5in; min-height: 11in; padding: 0.45in 0.6in 0.35in; }
+
+  /* ---------- Encabezado ---------- */
+  h1 { font-size: 22pt; font-weight: 800; letter-spacing: .02em; line-height: 1.1; }
+  .role { font-size: 11pt; font-weight: 700; color: var(--accent); margin-top: 2pt; }
+  .contact { margin-top: 5pt; color: var(--muted); font-size: 9pt; }
+  .contact a { color: inherit; text-decoration: none; }
+
+  /* ---------- Secciones ---------- */
+  h2 {
+    font-size: 10.5pt; font-weight: 800; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--accent); border-bottom: 1px solid var(--line);
+    padding-bottom: 2pt; margin: 11pt 0 5pt;
+  }
+  p { margin-bottom: 4pt; }
+
+  /* Bloque de cada trabajo/proyecto: título a la izquierda, fecha a la derecha */
+  .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+  .item-head strong { font-weight: 800; font-size: 10pt; }
+  .item-head span { color: var(--muted); font-size: 9pt; white-space: nowrap; }
+  .sub { color: var(--muted); font-weight: 600; margin-bottom: 3pt; }
+
+  ul { padding-left: 13pt; margin-bottom: 6pt; }
+  li { margin-bottom: 2.2pt; }
+  li::marker { color: var(--accent); }
+
+  /* Habilidades: etiqueta en negrita + lista separada por comas (los ATS la leen bien) */
+  .skills p { margin-bottom: 2.5pt; }
+  .skills b { font-weight: 800; }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <!-- ENCABEZADO: nombre + cargo objetivo + contacto en una sola línea -->
+  <header>
+    <h1>Luisa Leaccott</h1>
+    <div class="role">Creative Technologist · Desarrolladora Unity y Realidad Aumentada</div>
+    <div class="contact">
+      Bogotá, Colombia · <a href="mailto:luisaleaccott5@gmail.com">luisaleaccott5@gmail.com</a> · +57 300 767 7421 (WhatsApp)<br>
+      <a href="https://www.linkedin.com/in/beatrizaligh/">linkedin.com/in/beatrizaligh</a> · <a href="https://beatrizaligh.itch.io/">beatrizaligh.itch.io</a>
+    </div>
+  </header>
+
+  <!-- PERFIL: 3 líneas que responden "¿quién eres y qué aportas?" -->
+  <h2>Perfil</h2>
+  <p>
+    Diseñadora Digital y Multimedia y desarrolladora con más de dos años creando experiencias interactivas y de
+    realidad aumentada para marcas como Coca-Cola, Claro, NYX, Alpina, HP y Dodge. Como programadora principal
+    llevo las ideas del concepto a producción: programación en Unity (C#) y WebAR, diagramación de interfaces y
+    diseño de juego. Uno criterio visual y pensamiento de sistemas para construir experiencias claras, funcionales y listas para publicar.
+  </p>
+
+  <!-- EXPERIENCIA: verbos de acción al inicio de cada viñeta -->
+  <h2>Experiencia</h2>
+  <div class="item-head"><strong>Desarrolladora — Programadora principal</strong><span>2024 – sep. 2026</span></div>
+  <div class="sub">Dardranight Studios · Bogotá, Colombia</div>
+  <ul>
+    <li>Lideré la programación de más de 15 proyectos interactivos para marcas, asumiendo casi todo el desarrollo en un equipo de tres personas (backend, diseño y desarrollo).</li>
+    <li>Desarrollé filtros y experiencias de realidad aumentada —face tracking, hand tracking, minijuegos y banners interactivos— para Coca-Cola, Claro, NYX, Alpina, HP, Dodge y Todinnito, con 8th Wall, A-Frame, Zappar y Unity.</li>
+    <li>Resolví problemas de despliegue WebAR (SSL, CORS y configuración de SLAM) para dejar las experiencias estables en producción.</li>
+    <li>Construí sitios y experiencias web interactivas para Audi (chatbot), Movistar 360, Windmar y Flame Company con HTML, CSS, JavaScript y TypeScript.</li>
+    <li>Diagramé y maqueté la interfaz de proyectos como Ilumimochis (Alpina), Flame Company y HP, conectando el diseño visual con su implementación.</li>
+  </ul>
+
+  <!-- PROYECTOS DE JUEGO: demuestran el lado "creative" del cargo objetivo -->
+  <h2>Proyectos de videojuego</h2>
+  <div class="item-head"><strong>Último Ensayo · Off Shore</strong><span>Unity · C#</span></div>
+  <ul>
+    <li>Realicé el proceso completo: investigación de game design, diseño de niveles, programación, diagramación de UI y creación de sprites con apoyo de IA generativa.</li>
+  </ul>
+  <div class="item-head"><strong>Magic Birthday</strong><span>Unity · C#</span></div>
+  <ul>
+    <li>Experiencia interactiva desarrollada en Unity, con diseño de mecánicas y programación de gameplay.</li>
+  </ul>
+  <div class="item-head"><strong>Game jams</strong><span>Participante</span></div>
+  <ul>
+    <li>Women Game Jam · UNGames (Universidad Nacional) · Universidad de La Sabana · Universidad Militar Nueva Granada · Universidad Colegio Mayor de Cundinamarca.</li>
+  </ul>
+
+  <!-- FORMACIÓN -->
+  <h2>Formación</h2>
+  <div class="item-head"><strong>Diseñadora Digital y Multimedia</strong><span>2024</span></div>
+  <div class="sub">[Institución]</div>
+  <div class="item-head"><strong>Diplomado en Diseño y Desarrollo de Videojuegos (cursado parcialmente)</strong><span></span></div>
+  <div class="sub">Universidad Nacional de Colombia</div>
+
+  <!-- HABILIDADES: agrupadas para que el reclutador escanee rápido -->
+  <h2>Habilidades</h2>
+  <div class="skills">
+    <p><b>Desarrollo:</b> C#, Unity, JavaScript, TypeScript, HTML, CSS, Git</p>
+    <p><b>Realidad aumentada:</b> 8th Wall, A-Frame, Zappar, WebAR, face tracking, hand tracking</p>
+    <p><b>Diseño:</b> UI/UX, diagramación de interfaces, Figma, game design, diseño de niveles</p>
+    <p><b>Otras herramientas:</b> Aseprite, Godot, Roblox Studio, Python (básico), IA generativa para prototipos y assets</p>
+    <p><b>Idiomas:</b> Español (nativo) · Inglés A2 (lectura técnica)</p>
+  </div>
+
+</main>
+</body>
+</html>

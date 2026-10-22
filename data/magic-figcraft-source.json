@@ -1,0 +1,481 @@
+{
+  "images": {
+    "1722": {
+      "name": "image 140",
+      "asset": "birthday-scene.webp",
+      "size": [
+        1672,
+        941
+      ],
+      "frameSize": [
+        1452.0,
+        817.0
+      ]
+    },
+    "1751": {
+      "name": "image 142",
+      "asset": "paper-divider.webp",
+      "size": [
+        1536,
+        258
+      ],
+      "frameSize": [
+        1536.0,
+        258.0
+      ]
+    },
+    "1753": {
+      "name": "Estrella",
+      "asset": "balloon-star.webp",
+      "size": [
+        486,
+        810
+      ],
+      "frameSize": [
+        131.0,
+        198.0
+      ]
+    },
+    "1754": {
+      "name": "Cuadrado",
+      "asset": "balloon-square.webp",
+      "size": [
+        594,
+        1080
+      ],
+      "frameSize": [
+        115.0,
+        212.0
+      ]
+    },
+    "1755": {
+      "name": "Triángulo",
+      "asset": "balloon-triangle.webp",
+      "size": [
+        660,
+        711
+      ],
+      "frameSize": [
+        125.0,
+        156.0
+      ]
+    },
+    "1756": {
+      "name": "Circulo",
+      "asset": "balloon-circle.webp",
+      "size": [
+        477,
+        900
+      ],
+      "frameSize": [
+        103.0,
+        192.0
+      ]
+    },
+    "1788": {
+      "name": "image 151",
+      "asset": "luisa-magic.webp",
+      "size": [
+        1122,
+        1402
+      ],
+      "frameSize": [
+        612.0,
+        764.0
+      ]
+    },
+    "1789": {
+      "name": "ATLAS-ESCENARIOS 1",
+      "asset": "ingredients-background.webp",
+      "size": [
+        900,
+        731
+      ],
+      "frameSize": [
+        1458.0,
+        1184.0
+      ]
+    },
+    "1797": {
+      "name": "ATLAS-OBJETOS-LINDOS (1) 1",
+      "asset": "ingredient-1.webp",
+      "size": [
+        286,
+        340
+      ],
+      "frameSize": [
+        229.0,
+        272.0
+      ]
+    },
+    "1799": {
+      "name": "ATLAS-OBJETOS-LINDOS (1) 2",
+      "asset": "ingredient-2.webp",
+      "size": [
+        292,
+        270
+      ],
+      "frameSize": [
+        234.0,
+        216.0
+      ]
+    },
+    "1798": {
+      "name": "ATLAS-OBJETOS-LINDOS (1) 3",
+      "asset": "ingredient-3.webp",
+      "size": [
+        293,
+        270
+      ],
+      "frameSize": [
+        234.0,
+        216.0
+      ]
+    },
+    "1800": {
+      "name": "ATLAS-OBJETOS-LINDOS (1) 4",
+      "asset": "ingredient-4.webp",
+      "size": [
+        361,
+        265
+      ],
+      "frameSize": [
+        288.0,
+        212.0
+      ]
+    },
+    "1801": {
+      "name": "ATLAS-OBJETOS-LINDOS (1) 5",
+      "asset": "birthday-logo.webp",
+      "size": [
+        901,
+        486
+      ],
+      "frameSize": [
+        618.0,
+        335.0
+      ]
+    },
+    "1783": {
+      "name": "ATLAS-OBJETOS_CREEPY 1",
+      "asset": "creepy-1.webp",
+      "size": [
+        349,
+        374
+      ],
+      "frameSize": [
+        244.0,
+        262.0
+      ]
+    },
+    "1784": {
+      "name": "ATLAS-OBJETOS_CREEPY 2",
+      "asset": "creepy-2.webp",
+      "size": [
+        349,
+        374
+      ],
+      "frameSize": [
+        244.0,
+        262.0
+      ]
+    },
+    "1785": {
+      "name": "ATLAS-OBJETOS_CREEPY 4",
+      "asset": "creepy-3.webp",
+      "size": [
+        349,
+        375
+      ],
+      "frameSize": [
+        244.0,
+        262.0
+      ]
+    },
+    "1786": {
+      "name": "ATLAS-OBJETOS_CREEPY 3",
+      "asset": "creepy-4.webp",
+      "size": [
+        349,
+        374
+      ],
+      "frameSize": [
+        244.0,
+        262.0
+      ]
+    },
+    "1770": {
+      "name": "Pared rosada 1",
+      "asset": "theatre-wall.webp",
+      "size": [
+        1672,
+        941
+      ],
+      "frameSize": [
+        1812.0,
+        1020.0
+      ]
+    },
+    "1772": {
+      "name": "cortina exterior e interior abierta 1",
+      "asset": "curtain-left.webp",
+      "size": [
+        390,
+        910
+      ],
+      "frameSize": [
+        447.0,
+        1043.0
+      ]
+    },
+    "1773": {
+      "name": "cortina exterior e interior abierta 2",
+      "asset": "curtain-right.webp",
+      "size": [
+        390,
+        910
+      ],
+      "frameSize": [
+        447.0,
+        1043.0
+      ]
+    },
+    "1774": {
+      "name": "cortina segmentos 1",
+      "asset": "valance-1.webp",
+      "size": [
+        346,
+        271
+      ],
+      "frameSize": [
+        311.0,
+        244.0
+      ]
+    },
+    "1775": {
+      "name": "cortina segmentos 2",
+      "asset": "valance-2.webp",
+      "size": [
+        323,
+        271
+      ],
+      "frameSize": [
+        289.78839111328125,
+        244.0
+      ]
+    },
+    "1776": {
+      "name": "cortina segmentos 3",
+      "asset": "valance-3.webp",
+      "size": [
+        323,
+        271
+      ],
+      "frameSize": [
+        289.78839111328125,
+        244.0
+      ]
+    },
+    "1777": {
+      "name": "cortina segmentos 6",
+      "asset": "valance-4.webp",
+      "size": [
+        323,
+        271
+      ],
+      "frameSize": [
+        289.78839111328125,
+        244.0
+      ]
+    },
+    "1778": {
+      "name": "cortina segmentos 4",
+      "asset": "valance-5.webp",
+      "size": [
+        322,
+        272
+      ],
+      "frameSize": [
+        289.78839111328125,
+        244.0
+      ]
+    },
+    "1779": {
+      "name": "cortina segmentos 5",
+      "asset": "valance-6.webp",
+      "size": [
+        323,
+        271
+      ],
+      "frameSize": [
+        289.78839111328125,
+        244.0
+      ]
+    },
+    "1768": {
+      "name": "ATLAS-ESCENARIOS 1",
+      "asset": "theatre-floor.webp",
+      "size": [
+        497,
+        195
+      ],
+      "frameSize": [
+        754.0,
+        296.0
+      ]
+    },
+    "1873": {
+      "name": "ATLAS-OBJETOS_CREEPY 1",
+      "asset": "dark-ingredient-1.webp",
+      "size": [
+        215,
+        236
+      ],
+      "frameSize": [
+        173.0,
+        190.0
+      ]
+    },
+    "1874": {
+      "name": "ATLAS-OBJETOS_CREEPY 2",
+      "asset": "dark-ingredient-2.webp",
+      "size": [
+        297,
+        267
+      ],
+      "frameSize": [
+        233.0,
+        209.0
+      ]
+    },
+    "1876": {
+      "name": "ATLAS-OBJETOS_CREEPY 3",
+      "asset": "dark-ingredient-3.webp",
+      "size": [
+        297,
+        267
+      ],
+      "frameSize": [
+        233.0,
+        209.0
+      ]
+    },
+    "1875": {
+      "name": "ATLAS-OBJETOS_CREEPY 4",
+      "asset": "dark-ingredient-4.webp",
+      "size": [
+        378,
+        287
+      ],
+      "frameSize": [
+        297.0,
+        225.0
+      ]
+    },
+    "1805": {
+      "name": "Vector",
+      "asset": "icon-programming.svg"
+    },
+    "1807": {
+      "name": "Group 309",
+      "asset": "icon-experience.svg"
+    },
+    "1806": {
+      "name": "Vector",
+      "asset": "icon-integration.svg"
+    },
+    "1963": {
+      "name": "Vector",
+      "asset": "icon-events.svg"
+    },
+    "1961": {
+      "name": "Vector",
+      "asset": "icon-phone.svg"
+    },
+    "1964": {
+      "name": "Group 331",
+      "asset": "icon-notes.svg"
+    },
+    "1967": {
+      "name": "Group 332",
+      "asset": "icon-device.svg"
+    }
+  },
+  "texts": {
+    "1725": "Unity gameplay developer",
+    "1726": "portáfolio",
+    "1727": "Desde la investigación y la conceptualización, pasando por el diseño de interfaces y la experiencia de usuario, hasta la programación de sistemas de gameplay y la implementación técnica.\n\nMi formación en Diseño Digital y Multimedia, junto con mi experiencia como desarrolladora, me permite conectar el diseño y la tecnología para convertir ideas en productos funcionales, bien estructurados y listos para producción.",
+    "1729": "MAGIC BIRTHDAY",
+    "1730": "Unity · C# · Game Development · LAN · Game Jam",
+    "1731": "Un cumpleaños que no debería ser así. ",
+    "1732": "Magic Birthday es una experiencia de horror psicológico que juega con la ruptura de la cuarta pared. Lo que comienza como una adorable fiesta de cumpleaños se transforma progresivamente en una experiencia donde el juego, el computador y el teléfono del jugador comienzan a mezclarse.",
+    "1733": "2024 · Game Jam — Universidad Nacional de Colombia Estado: En desarrollo",
+    "1735": "Mi rol",
+    "1736": "Unity Developer · Gameplay Programmer · Montaje",
+    "1737": "Mi principal responsabilidad dentro del proyecto fue el desarrollo y montaje de la experiencia en Unity.\nTrabajé en la implementación de los sistemas que permiten que las diferentes partes del juego se comuniquen entre sí y en la integración de las mecánicas necesarias para que las acciones del jugador tengan consecuencias dentro de la experiencia.",
+    "1781": "EL PROYECTO",
+    "1782": "Una fiesta. Una desaparición. Algo no está bien.\nLa experiencia comienza con la preparación de una fiesta de cumpleaños. El jugador debe completar pequeñas actividades y resolver retos mientras intenta descubrir qué ocurrió con la persona que debía celebrar.\nLa estética utiliza ilustraciones 2D pintadas a mano sobre elementos 3D, creando una apariencia inicialmente tierna y familiar que progresivamente comienza a romperse.\nInspirado en experiencias como Doki Doki Literature Club y Bonnie's Bakery, el proyecto utiliza la ruptura de la cuarta pared como parte central de su narrativa.",
+    "1790": "ver mas proyectos unity ",
+    "1793": "→",
+    "1802": "mas información en los ingredientes",
+    "1804": "Mis responsabilidades",
+    "1810": "programación",
+    "1811": "Integración",
+    "1812": "EXPERIENCIA",
+    "1813": "Unity 6 y C# para la programación del gameplay.\nUniversal Render Pipeline (URP) para renderizado optimizado y compatibilidad móvil.\nUnity Input System para gestionar controles y entradas del jugador.\nNetcode for GameObjects y Unity Transport para sincronización multijugador.\nSistema de descubrimiento de partidas en red local.\nParrelSync para probar varios clientes desde el editor.\nCinemachine para el control dinámico de cámaras.\nTextMeshPro y Unity UI para interfaces, diálogos y menús.\nSistema de diálogos basado en nodos mediante xNode.\nSistemas propios de inventario, interacción, misiones, notificaciones y cambio dinámico de materiales.\nUso de corrutinas, eventos, interfaces y componentes reutilizables.\nConfiguración móvil con IL2CPP, ARM64 y Android API moderna.\nTambién realicé la migración técnica desde una versión antigua de Unity hacia Unity 6, actualizando APIs obsoletas, dependencias, configuración de renderizado y compatibilidad de compilación para dispositivos Android actuales.",
+    "1822": "mas información en los ingredientes",
+    "1824": "Mis responsabilidades",
+    "1830": "programación",
+    "1831": "Integración",
+    "1832": "EXPERIENCIA",
+    "1833": "Implementación de comunicación entre PC y teléfono mediante una conexión LAN, utilizando Netcode for GameObjects y Unity Transport.\nDesarrollo de un sistema de descubrimiento automático de partidas en la red local, facilitando la conexión del dispositivo móvil con el juego principal.\nIntegración de la aplicación móvil como cliente conectado a una instancia principal ejecutada como host o servidor.\nImplementación de comunicación mediante RPCs, permitiendo ejecutar acciones y eventos sincronizados entre los dispositivos.\nDesarrollo de un sistema de notificaciones y comandos capaz de enviar información entre el teléfono y la experiencia principal.\nConfiguración de componentes de red mediante NetworkManager, NetworkBehaviour, prefabs sincronizados y gestión de conexiones.\nMontaje técnico de escenas, interfaces, elementos interactivos, cámaras, sistemas narrativos y componentes multijugador.\nPreparación de la aplicación para dispositivos Android modernos mediante IL2CPP, ARM64, Unity Input System y Universal Render Pipeline.",
+    "1842": "mas información en los ingredientes",
+    "1844": "DOS DISPOSITIVOS. UNA SOLA EXPERIENCIA.",
+    "1856": "mas información en los ingredientes",
+    "1858": "Mis responsabilidades",
+    "1864": "programación",
+    "1865": "Integración",
+    "1866": "EXPERIENCIA",
+    "1867": "Desarrollo de mecánicas de ruptura de la cuarta pared mediante eventos de gameplay, interfaces diegéticas y cambios dinámicos en el entorno.\nImplementación de sistemas en C# para Unity capaces de modificar el estado de la experiencia: materiales, objetos interactivos, diálogos, audio, animaciones y progresión.\nCreación de una interfaz que simula un dispositivo móvil dentro del juego, utilizando Unity UI, TextMeshPro, eventos y notificaciones.\nDesarrollo y soporte de diferentes experiencias y minijuegos mediante componentes reutilizables, corrutinas, interfaces, eventos y sistemas modulares.\nImplementación de sistemas de interacción basados en colliders, triggers, inventario y acciones contextuales del jugador.\nIntegración de un sistema de diálogos basado en nodos, permitiendo controlar conversaciones, respuestas y eventos asociados a la narrativa.",
+    "1881": "mas información en los ingredientes",
+    "1883": "La cuarta pared representada en MAgic Birthday",
+    "1901": "StartHost()",
+    "1905": "StartClient()",
+    "1909": "Publica sesión mediante broadcast LAN",
+    "1913": "Establece conexion",
+    "1917": "El celuluar detecta la dirección IP y puerto",
+    "1921": "El celular envia acciones mediante RCP",
+    "1925": "Configuracion de UnityTransport",
+    "1929": "El servidor valida y distribuye los eventos",
+    "1930": "Implementé una arquitectura Host–Client con Netcode for GameObjects y Unity Transport. El computador funciona como host y el celular detecta automáticamente la sesión dentro de la red local mediante broadcast.\nUna vez conectado, el teléfono actúa como interfaz complementaria y envía acciones al juego mediante Server RPCs. El computador procesa estos comandos y sincroniza eventos, notificaciones, audio y cambios de gameplay mediante Client RPCs y eventos de C#, sin depender de servidores externos ni conexión a Internet.",
+    "1931": "El juego utiliza diferentes sistemas para hacer que el jugador dude de dónde termina el juego y dónde comienza su propio dispositivo. Dentro de la experiencia se implementaron elementos como:",
+    "1932": "Cambios en determinados elementos del juego para generar situaciones inesperadas.",
+    "1940": "Eventos Dinámicos",
+    "1941": "Interacción con el dispositivo",
+    "1942": "Sistema de notas",
+    "1943": "Comunicación con el telefono",
+    "1958": "mas información en los ingredientes",
+    "1960": "La cuarta pared representada en MAgic Birthday",
+    "1962": "El juego utiliza diferentes sistemas para hacer que el jugador dude de dónde termina el juego y dónde comienza su propio dispositivo. Dentro de la experiencia se implementaron elementos como:",
+    "1970": "Eventos Dinámicos",
+    "1971": "Interacción con el dispositivo",
+    "1972": "Sistema de notas",
+    "1973": "Comunicación con el telefono",
+    "1988": "mas información en los ingredientes",
+    "1990": "MAgic Birthday",
+    "2005": "mas información en los ingredientes",
+    "2007": "La cuarta pared representada en MAgic Birthday",
+    "2009": "El juego utiliza diferentes sistemas para hacer que el jugador dude de dónde termina el juego y dónde comienza su propio dispositivo. Dentro de la experiencia se implementaron elementos como:",
+    "2017": "Eventos Dinámicos",
+    "2018": "Interacción con el dispositivo",
+    "2019": "Sistema de notas",
+    "2020": "Comunicación con el telefono",
+    "2035": "mas información en los ingredientes",
+    "2037": "La cuarta pared representada en MAgic Birthday",
+    "2039": "El juego utiliza diferentes sistemas para hacer que el jugador dude de dónde termina el juego y dónde comienza su propio dispositivo. Dentro de la experiencia se implementaron elementos como:",
+    "2047": "Eventos Dinámicos",
+    "2048": "Interacción con el dispositivo",
+    "2049": "Sistema de notas",
+    "2050": "Comunicación con el telefono"
+  }
+}

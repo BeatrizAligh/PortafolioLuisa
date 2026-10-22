@@ -1,0 +1,29 @@
+/* Portfolio landings (Unity, Game Design, Featured, AR Dev, Web Dev): card grid that adapts to the number of projects */
+.projects-page .project-grid{display:flex;flex-wrap:wrap;justify-content:center}
+.projects-page .project-card{flex:0 1 calc(25% - 12px);min-width:0}
+.projects-page .project-grid[data-count="3"]{width:min(68%,900px)}
+.projects-page .project-grid[data-count="3"] .project-card{flex-basis:calc(33.333% - 11px)}
+.unity-portfolio:has(.project-grid[data-count="5"]),.unity-portfolio:has(.project-grid[data-count="6"]),.unity-portfolio:has(.project-grid[data-count="7"]),.unity-portfolio:has(.project-grid[data-count="8"]){min-height:calc(max(100svh,min(1360px,94.45vw)) + 270px)}
+.project-card--link{text-decoration:none}
+.projects-page .project-card{animation:card-in .8s both cubic-bezier(.2,.7,.2,1);animation-delay:calc(var(--n,0)*80ms + .2s)}
+@keyframes card-in{from{opacity:0;transform:translateY(30px)}}
+.unity-portfolio__intro{animation:intro-in 1s .1s both ease-out}
+.unity-portfolio__portrait{animation:portrait-in 1.2s both cubic-bezier(.2,.7,.2,1)}
+@keyframes intro-in{from{opacity:0;transform:translateX(30px)}}
+@keyframes portrait-in{from{opacity:0;transform:translateY(24px) scale(.98)}}
+/* drifting sparkles shared by the landings */
+.landing-sparkles{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.landing-sparkles i{position:absolute;left:var(--x);top:var(--y);width:var(--s);aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 0 8px 2px rgba(214,196,255,.85);opacity:.0;animation:sparkle var(--d) ease-in-out infinite;animation-delay:var(--delay)}
+@keyframes sparkle{0%,100%{opacity:0;transform:translateY(0) scale(.6)}50%{opacity:.9;transform:translateY(-26px) scale(1)}}
+@media (max-width:720px){
+  .projects-page .project-grid,.projects-page .project-grid[data-count="3"]{width:calc(100% - 3.8rem)}
+  .projects-page .project-card,.projects-page .project-grid[data-count="3"] .project-card{flex-basis:calc(50% - 4px)}
+  .projects-page .project-grid[data-count="3"] .project-card:last-child{flex-basis:calc(50% - 4px)}
+  .unity-portfolio:has(.project-grid[data-count="7"]),.unity-portfolio:has(.project-grid[data-count="8"]){min-height:100svh}
+}
+@media (prefers-reduced-motion:reduce){.projects-page .project-card,.unity-portfolio__intro,.unity-portfolio__portrait,.landing-sparkles i{animation:none}}
+@media (min-width:721px) and (max-width:1050px){
+  .projects-page .project-card h2{font-size:clamp(1.05rem,2.1vw,1.4rem);letter-spacing:.05em}
+  .projects-page .project-card{padding-inline:1rem}
+}
+@media (max-width:1050px){.unity-portfolio__description{text-shadow:0 2px 10px rgba(12,8,40,.85)}}

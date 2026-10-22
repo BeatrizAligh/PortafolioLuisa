@@ -1,0 +1,91 @@
+/* ===== Ilumimochis: video slots, cards and gameplay gallery ===== */
+.mochis-video,.mochis-feature{aspect-ratio:auto!important;border:0!important;background:none!important;box-shadow:none!important;overflow:visible!important;border-radius:0!important;cursor:auto}
+.mochis-feature .vplayer__chips button{font-size:.66rem}
+
+/* Neon frame from the design around the responsibilities panel */
+.mochis-responsibilities{position:relative}
+.mochis-responsibilities:after{content:"";position:absolute;z-index:-1;inset:44px -36px -8px;border:3px solid #ffe45c;border-radius:30px;box-shadow:0 0 14px #ffd83d,inset 0 0 14px rgba(255,216,61,.55);pointer-events:none;opacity:.9}
+
+/* Cards: dim when idle, full natural colour when selected (no over-exposure) */
+.mochis-card img{filter:brightness(.55) saturate(.7)!important;aspect-ratio:305/425;object-fit:cover}
+.mochis-card:not([aria-selected=true]):hover img{filter:brightness(.8) saturate(.9)!important}
+.mochis-card[aria-selected=true] img{filter:none!important}
+.mochis-card[aria-selected=true]{filter:drop-shadow(0 0 14px rgba(255,236,120,.85)) drop-shadow(0 0 30px rgba(223,130,250,.6))!important}
+.mochis-card{max-width:245px}
+
+/* Gallery */
+.mochis-gallery{position:relative;width:calc(100% - 10.8%);max-width:1180px;margin:0 auto;padding:40px 0 120px;isolation:isolate}
+.mochis-gallery__head{text-align:center;margin-bottom:32px}
+.mochis-gallery__head .mochis-kicker{font-family:BebasKai,Impact,sans-serif;font-size:clamp(1.5rem,3.34vw,3rem);letter-spacing:.14em;margin:0;text-shadow:0 0 14px rgba(255,255,255,.55)}
+.mochis-gallery__head h2{margin:.4rem 0 0;font:700 clamp(.85rem,1.3vw,1.05rem)/1.4 Nunito,sans-serif;letter-spacing:.22em;text-transform:uppercase}
+.mochis-gallery__main{position:relative;padding:18px;border:3px solid #ffe45c;border-radius:34px;box-shadow:0 0 14px #ffd83d,inset 0 0 14px rgba(255,216,61,.45);background:rgba(43,20,94,.45);backdrop-filter:blur(6px)}
+.mochis-gallery__thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:26px}
+.mochis-thumb{display:flex;flex-direction:column;gap:10px;padding:8px;border:1px solid rgba(255,255,255,.3);border-radius:18px;background:rgba(36,18,82,.55);color:#fff;text-align:left;cursor:pointer;transition:transform .3s,border-color .3s,box-shadow .3s}
+.mochis-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;filter:brightness(.7) saturate(.85);transition:filter .3s}
+.mochis-thumb span{padding:0 6px 4px;font:700 .78rem/1.35 Nunito,sans-serif;letter-spacing:.06em}
+.mochis-thumb:hover{transform:translateY(-4px);border-color:#fff}
+.mochis-thumb:hover img,.mochis-thumb[aria-selected=true] img{filter:none}
+.mochis-thumb[aria-selected=true]{border-color:#ffe45c;box-shadow:0 0 16px rgba(255,216,61,.7)}
+@media (max-width:760px){
+  .mochis-responsibilities:after{inset:24px -10px -4px;border-radius:20px;border-width:2px}
+  .mochis-gallery{width:calc(100% - 32px);padding:24px 0 72px}
+  .mochis-gallery__main{padding:8px;border-width:2px;border-radius:20px}
+  .mochis-gallery__thumbs{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .mochis-thumb span{font-size:.7rem}
+}
+
+/* ===== Magic Birthday: video slots ===== */
+.magic-video{aspect-ratio:auto!important;border:0!important;background:none!important;box-shadow:none!important;border-radius:0!important;max-height:none!important}
+.magic-video .vplayer__stage{border-color:#d8c3f4}
+.magic-device-layout .magic-video--phone{width:100%;max-width:300px;margin-top:-90px;justify-self:center}
+.magic-video--phone .vplayer{--vp-ratio:9/16}
+@media (max-width:760px){.magic-device-layout .magic-video--phone{margin-top:0;max-width:240px}.magic-video--phone{width:auto}}
+/* Ribbon sat under the cloud divider; push it below like in the design */
+.magic-kitchen{padding-top:72px}
+.magic-kitchen__ribbon{margin:0}
+@media (max-width:760px){.magic-kitchen{padding-top:40px}}
+/* Tablet: the stage kept a phone aspect ratio and stopped at ~500px wide */
+@media (max-width:900px){.mochis-stage{width:100%;aspect-ratio:auto;height:min(136vw,680px)}}
+.mochis-card[aria-selected=true]{transform:rotate(0) translateY(-18px) scale(1.08)!important}
+@media (max-width:760px){.mochis-card[aria-selected=true]{transform:rotate(0) translateY(-10px) scale(1.06)!important}}
+
+/* ===== Magic Birthday: game gallery (polaroids, like the "Desaparecido" posters) ===== */
+.magic-gallery{position:relative;padding:clamp(56px,7vw,100px) max(24px,6%) clamp(64px,8vw,110px);background:radial-gradient(circle at 15% 20%,rgba(255,190,220,.35),transparent 40%),linear-gradient(180deg,#a1799a,#7a5a92 60%,#5b4380)}
+.photo-gallery__head{text-align:center;margin-bottom:clamp(28px,4vw,52px)}
+.photo-gallery__head h2{margin:0;font:400 clamp(2rem,3.34vw,3rem)/1.2 BebasKai,Impact,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-shadow:0 0 14px rgba(255,255,255,.5)}
+.photo-gallery__head p{margin:10px 0 0;font:700 clamp(.85rem,1.2vw,1.05rem)/1.4 Nunito,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#ffe6f2}
+.photo-gallery__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(18px,3vw,40px);max-width:1240px;margin:0 auto}
+.photo-gallery__item{position:relative;display:flex;flex-direction:column;gap:10px;padding:10px 10px 14px;border:0;border-radius:4px;background:#fff8f3;box-shadow:0 14px 28px rgba(40,10,50,.35);color:#5a2b55;cursor:zoom-in;transform:rotate(var(--tilt));transition:transform .35s cubic-bezier(.2,.8,.2,1.3),box-shadow .35s}
+.photo-gallery__item:before{content:"";position:absolute;top:-12px;left:50%;width:70px;height:22px;background:rgba(255,214,232,.85);box-shadow:0 2px 4px rgba(0,0,0,.12);transform:translateX(-50%) rotate(calc(var(--tilt)*-1.5))}
+.photo-gallery__item img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:2px;filter:saturate(.95)}
+.photo-gallery__item span{font:800 .78rem/1.3 Nunito,sans-serif;letter-spacing:.06em;text-align:center}
+.photo-gallery__item:hover,.photo-gallery__item:focus-visible{transform:rotate(0) scale(1.06);box-shadow:0 22px 40px rgba(40,10,50,.45);z-index:2;outline:none}
+.lightbox{max-width:min(92vw,1400px);width:100%;padding:0;border:0;background:transparent;overflow:visible}
+.lightbox::backdrop{background:rgba(20,8,30,.86);backdrop-filter:blur(6px)}
+.lightbox figure{margin:0;padding:12px 12px 16px;border-radius:6px;background:#fff8f3;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.lightbox img{display:block;width:100%;max-height:78vh;object-fit:contain;background:#111}
+.lightbox figcaption{margin-top:10px;text-align:center;color:#5a2b55;font:800 .9rem/1.3 Nunito,sans-serif;letter-spacing:.08em}
+.lightbox button{position:absolute;display:grid;place-items:center;width:46px;aspect-ratio:1;border:1px solid #fff;border-radius:50%;background:rgba(60,25,80,.7);color:#fff;font-size:1.2rem;cursor:pointer}
+.lightbox__close{top:-18px;right:-18px}
+.lightbox__nav--prev{left:-22px;top:50%;transform:translateY(-50%)}
+.lightbox__nav--next{right:-22px;top:50%;transform:translateY(-50%)}
+@media (max-width:760px){
+  .photo-gallery__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lightbox__close{top:-52px;right:0}
+  .lightbox__nav--prev{left:4px}.lightbox__nav--next{right:4px}
+}
+
+/* ===== Otros proyectos (OffShore) ===== */
+.ot-case{background:linear-gradient(180deg,#1c2b4a,#24496b 45%,#2f6b7d 75%,#1e3d55)}
+.ot-head{position:relative;padding:clamp(70px,8vw,110px) max(24px,7%) 10px;text-align:center}
+.ot-head h2{text-shadow:0 0 14px rgba(255,255,255,.5)}
+.ot-item{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,4vw,64px);align-items:center;max-width:1280px;margin:0 auto;padding:clamp(40px,5vw,70px) max(24px,6%) clamp(70px,8vw,110px)}
+.ot-item h3{margin:0;font:400 clamp(2.2rem,4vw,3.6rem)/1 BebasKai,Impact,sans-serif;letter-spacing:.14em;color:#ffd36b;text-shadow:3px 3px 0 #7a3b12}
+.ot-role{font-size:clamp(.72rem,1vw,.9rem)!important;letter-spacing:.14em!important}
+.ot-item .case-body{font-weight:500}
+.ot-item h4{margin:22px 0 10px;font:900 .9rem/1.2 Nunito,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#bff3ff}
+.ot-item ul{margin:0;padding-left:1.1em;font:500 clamp(.85rem,1.1vw,1rem)/1.45 Nunito,sans-serif}
+.ot-item li{margin-bottom:.35em}
+.ot-frame{padding:14px;border:4px solid #c9a35a;border-radius:6px;background:#2d3b25;box-shadow:0 0 0 4px #5b4320,0 22px 40px rgba(0,0,0,.45);image-rendering:pixelated}
+.ot-frame .vplayer__stage{border:0;border-radius:2px;box-shadow:none}
+@media (max-width:820px){.ot-item{grid-template-columns:1fr}.ot-item__media{order:-1}}

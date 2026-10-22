@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#171139">
+  <title>Unity Gameplay Developer — Luisa Leaccott</title>
+  <link rel="icon" href="Img/Logosvectores/LogoLuisa.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/ilumimochis.css">
+  <link rel="stylesheet" href="css/magic-birthday.css">
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/cases.css">
+  <link rel="stylesheet" href="css/case-ultimo.css">
+  <link rel="stylesheet" href="css/case-bomber.css">
+  <link rel="stylesheet" href="css/case-hotel.css">
+</head>
+<body class="projects-page">
+  <header class="projects-topbar" aria-label="Navegación del portafolio">
+    <a class="projects-brand" href="index.html#portfolio" aria-label="Volver al portafolio principal">
+      <img src="Img/Figma/Portafolio/logo-luisa.svg" alt="">
+    </a>
+    <button class="language projects-language" id="languageButton" type="button" aria-label="Change language">EN</button>
+  </header>
+  <main class="unity-portfolio">
+    <div class="unity-portfolio__backdrop" aria-hidden="true"></div>
+    <div class="landing-sparkles" aria-hidden="true"></div>
+    <img class="unity-portfolio__portrait" src="Img/Figma/Portafolio/luisa-sentada-portafolio.webp" alt="Ilustración de Luisa Leaccott sentada">
+    <section class="unity-portfolio__intro" aria-labelledby="projectsTitle">
+      <h1 id="projectsTitle">Unity Gameplay Developer</h1>
+      <p class="unity-portfolio__kicker" id="projectsKicker">Portafolio</p>
+      <div class="unity-portfolio__description" id="projectsDescription"></div>
+    </section>
+    <nav class="project-grid" id="projectGrid" aria-label="Proyectos de Unity"></nav>
+  </main>
+  <section class="mochis-case" id="mochisCase" aria-hidden="true" aria-labelledby="mochisTitle">
+    <div class="mochis-case__inner">
+      <div class="mochis-particles" id="mochisParticles" aria-hidden="true"></div>
+
+      <div class="mochis-stage" data-parallax-zone>
+        <img class="mochis-stage__world parallax-layer" data-depth="0.08" src="Img/Portafolio/Ilumimochis/imgCarga.webp" alt="Paisaje fantástico de Ilumimochis">
+        <img class="mochis-stage__mobile-world" src="Img/Portafolio/Ilumimochis/figcraft-mobile-landscape.webp" alt="Ilumimochis — Yogo Yogo">
+        <div class="mochis-stage__glow" aria-hidden="true"></div>
+        <img class="mochis-stage__brand" src="Img/Portafolio/Ilumimochis/imgFondo.svg" alt="Yogo Yogo">
+        <img class="mochis-stage__creature mochis-stage__creature--three" src="Img/Portafolio/Ilumimochis/imgRectangle16.webp" alt="Mochi dragón">
+        <img class="mochis-stage__logo parallax-layer" data-depth="0.2" src="Img/Portafolio/Ilumimochis/imgIlumimochisAsset40000.webp" alt="Ilumimochis">
+        <img class="mochis-stage__creature mochis-stage__creature--one parallax-layer" data-depth="0.3" src="Img/Portafolio/Ilumimochis/imgRectangle74.webp" alt="Mochi caracol">
+        <img class="mochis-stage__creature mochis-stage__creature--two parallax-layer" data-depth="0.24" src="Img/Portafolio/Ilumimochis/imgRectangle78.webp" alt="Mochi pegaso">
+        <button class="mochis-case__close" id="mochisClose" type="button" aria-label="Cerrar caso de estudio">×</button>
+      </div>
+
+      <article class="mochis-overview mochis-reveal">
+        <div class="mochis-overview__copy">
+          <p class="mochis-kicker" data-mochis="type">Unity · C# · Game Development · Game Design</p>
+          <h2 id="mochisTitle">Ilumimochis</h2>
+          <p data-mochis="summary">Juego digital de cartas desarrollado como parte de una campaña de Yogo Yogo, inspirado en sus personajes y colección de cartas. Combina enfrentamientos accesibles con construcción de mazos y gestión estratégica de recursos.</p>
+          <p class="mochis-meta" data-mochis="meta">2025 · Dardranight Studios<br>Estado: finalizado y publicado</p>
+        </div>
+        <div class="mochis-video"><div class="vplayer" data-video="mochis-trailer" data-title="Ilumimochis"></div></div>
+      </article>
+
+      <article class="mochis-role mochis-reveal">
+        <div class="mochis-role__copy">
+          <p class="mochis-kicker" data-mochis="roleKicker">Mi rol</p>
+          <h2 data-mochis="roleTitle">Unity Developer — Frontend &amp; Game Designer</h2>
+          <p data-mochis="roleText">En Ilumimochis fui responsable del desarrollo frontend del videojuego en Unity y del diseño de uno de sus modos de juego. Mi trabajo abarcó sistemas de gameplay, navegación, personalización y progresión, además del montaje de interfaz y la configuración de recursos visuales.</p>
+        </div>
+        <img class="mochis-role__portrait" src="Img/Portafolio/Ilumimochis/imgImage153.webp" alt="Luisa acompañada por los personajes de Ilumimochis">
+      </article>
+
+      <article class="mochis-responsibilities mochis-reveal" id="mochisResponsibilityPanel" role="tabpanel" aria-labelledby="mochisTab0">
+        <div class="mochis-responsibilities__copy" aria-live="polite" aria-atomic="true">
+          <p class="mochis-kicker" data-mochis="responsibilityKicker">Mis responsabilidades</p>
+          <h2 data-mochis="responsibilityTitle">Diseño e implementación de gameplay</h2>
+          <ul id="mochisResponsibilityText"></ul>
+          <div id="mochisResponsibilityProse" hidden></div>
+        </div>
+        <div class="mochis-feature"><div class="vplayer" id="mochisFeatureVideo" data-video=""></div></div>
+      </article>
+
+      <div class="mochis-cards mochis-reveal" role="tablist" aria-label="Mis responsabilidades" id="mochisTabs">
+        <button class="mochis-card mochis-card--one" id="mochisTab0" role="tab" aria-controls="mochisResponsibilityPanel" aria-selected="true" data-responsibility="0"><img src="Img/Portafolio/Ilumimochis/card-mochi.webp" alt=""><span>Gameplay</span></button>
+        <button class="mochis-card mochis-card--two" id="mochisTab1" role="tab" aria-controls="mochisResponsibilityPanel" aria-selected="false" tabindex="-1" data-responsibility="1"><img src="Img/Portafolio/Ilumimochis/card-chubmarinos.webp" alt=""><span>Interfaz</span></button>
+        <button class="mochis-card mochis-card--three" id="mochisTab2" role="tab" aria-controls="mochisResponsibilityPanel" aria-selected="false" tabindex="-1" data-responsibility="2"><img src="Img/Portafolio/Ilumimochis/card-urbonubosos.webp" alt=""><span>Sistemas</span></button>
+        <button class="mochis-card mochis-card--four" id="mochisTab3" role="tab" aria-controls="mochisResponsibilityPanel" aria-selected="false" tabindex="-1" data-responsibility="3"><img src="Img/Portafolio/Ilumimochis/card-yogocosmicos.webp" alt=""><span>Recursos visuales</span></button>
+      </div>
+
+      <section class="mochis-gallery mochis-reveal" aria-labelledby="mochisGalleryTitle">
+        <header class="mochis-gallery__head">
+          <p class="mochis-kicker" id="mochisGalleryTitle" data-mochis="galleryKicker">Gameplay</p>
+          <h2 data-mochis="galleryTitle">Recorrido por el juego</h2>
+        </header>
+        <div class="mochis-gallery__main"><div class="vplayer" id="mochisGalleryPlayer" data-video="mochis-gameplay-general"></div></div>
+        <div class="mochis-gallery__thumbs" id="mochisGalleryThumbs" role="tablist" aria-label="Videos de Ilumimochis"></div>
+      </section>
+    </div>
+  </section>
+  <section class="magic-case" id="magicCase" aria-hidden="true" aria-labelledby="magicTitle" inert>
+    <div class="magic-case__inner">
+      <div class="magic-stage">
+        <img class="magic-stage__scene" src="Img/Portafolio/MagicBirthday/birthday-scene.webp" alt="Escenario teatral de Magic Birthday">
+        <img class="magic-stage__mobile-scene" src="Img/Portafolio/MagicBirthday/birthday-mobile-scene.webp" alt="">
+        <img class="magic-stage__paper" src="Img/Portafolio/MagicBirthday/paper-divider.webp" alt="">
+        <button class="magic-close" type="button" id="magicClose" aria-label="Cerrar Magic Birthday">×</button>
+        <div class="magic-balloons" aria-hidden="true">
+          <img src="Img/Portafolio/MagicBirthday/balloon-star.webp" alt="">
+          <img src="Img/Portafolio/MagicBirthday/balloon-square.webp" alt="">
+          <img src="Img/Portafolio/MagicBirthday/balloon-triangle.webp" alt="">
+          <img src="Img/Portafolio/MagicBirthday/balloon-circle.webp" alt="">
+        </div>
+        <img class="magic-stage__logo" src="Img/Portafolio/MagicBirthday/birthday-logo.webp" alt="Happy Birthday">
+      </div>
+      <article class="magic-overview magic-width">
+        <div>
+          <h2 id="magicTitle">Magic Birthday</h2>
+          <p class="magic-eyebrow" data-magic="1730"></p>
+          <p class="magic-tagline" data-magic="1731"></p>
+          <p data-magic="1732"></p>
+          <p class="magic-meta" data-magic="1733"></p>
+        </div>
+        <div class="magic-video"><div class="vplayer" data-video="magic-trailer" data-title="Magic Birthday"></div></div>
+      </article>
+      <article class="magic-project">
+        <div class="magic-theatre" aria-hidden="true">
+          <img class="magic-theatre__wall" src="Img/Portafolio/MagicBirthday/theatre-wall.webp" alt="" loading="lazy">
+          <img class="magic-theatre__floor" src="Img/Portafolio/MagicBirthday/theatre-floor.webp" alt="" loading="lazy">
+          <img class="magic-theatre__curtain magic-theatre__curtain--left" src="Img/Portafolio/MagicBirthday/curtain-left.webp" alt="" loading="lazy">
+          <img class="magic-theatre__curtain magic-theatre__curtain--right" src="Img/Portafolio/MagicBirthday/curtain-right.webp" alt="" loading="lazy">
+          <div class="magic-theatre__valance">
+            <img src="Img/Portafolio/MagicBirthday/valance-1.webp" alt="" loading="lazy"><img src="Img/Portafolio/MagicBirthday/valance-2.webp" alt="" loading="lazy"><img src="Img/Portafolio/MagicBirthday/valance-3.webp" alt="" loading="lazy"><img src="Img/Portafolio/MagicBirthday/valance-5.webp" alt="" loading="lazy"><img src="Img/Portafolio/MagicBirthday/valance-4.webp" alt="" loading="lazy"><img src="Img/Portafolio/MagicBirthday/valance-6.webp" alt="" loading="lazy">
+          </div>
+        </div>
+        <div class="magic-project__copy magic-width"><h2 data-magic="1781"></h2><div data-magic="1782"></div></div>
+        <div class="magic-creepy" aria-hidden="true">
+          <img src="Img/Portafolio/MagicBirthday/creepy-3.webp" alt="" loading="lazy"><img src="Img/Portafolio/MagicBirthday/creepy-2.webp" alt="" loading="lazy"><img src="Img/Portafolio/MagicBirthday/creepy-1.webp" alt="" loading="lazy"><img src="Img/Portafolio/MagicBirthday/creepy-4.webp" alt="" loading="lazy">
+        </div>
+      </article>
+      <article class="magic-role magic-width">
+        <div class="magic-role__copy"><h2 data-magic="1735"></h2><p class="magic-eyebrow" data-magic="1736"></p><div data-magic="1737"></div></div>
+        <img class="magic-role__portrait" src="Img/Portafolio/MagicBirthday/luisa-magic.webp" alt="Ilustración de Luisa para Magic Birthday" loading="lazy">
+      </article>
+      <div class="magic-paper-boundary" aria-hidden="true"><img src="Img/Portafolio/MagicBirthday/paper-divider.webp" alt=""></div>
+      <section class="magic-kitchen" aria-label="Detalles del proyecto Magic Birthday">
+        <p class="magic-kitchen__ribbon" data-magic="1802"></p>
+        <div class="magic-kitchen__content magic-width" id="magicIngredientPanel" role="tabpanel" aria-labelledby="magicIngredient0">
+          <p class="magic-mobile-intro" id="magicMobileIntro" hidden></p>
+          <div class="magic-mobile-selector" id="magicMobileSelector" hidden>
+            <button type="button" id="magicPrevious" aria-label="Anterior">←</button>
+            <div><img id="magicMobileIcon" alt=""><span id="magicMobileLabel"></span></div>
+            <button type="button" id="magicNext" aria-label="Siguiente">→</button>
+          </div>
+          <h2 id="magicDetailHeading"></h2>
+          <div id="magicResponsibilityView">
+            <div class="magic-icon-tabs" id="magicResponsibilityTabs" role="tablist" aria-label="Áreas de responsabilidad"></div>
+            <div id="magicResponsibilityPanel" role="tabpanel" tabindex="0"><ul id="magicResponsibilityList"></ul></div>
+          </div>
+          <div id="magicDevicesView" hidden>
+            <div class="magic-device-icons" aria-hidden="true"><img src="Img/Portafolio/MagicBirthday/icon-experience.svg?v=20261019" alt=""><img src="Img/Portafolio/MagicBirthday/icon-phone.svg?v=20261019" alt=""><img src="Img/Portafolio/MagicBirthday/icon-network.svg?v=20261019" alt=""></div>
+            <div class="magic-device-layout"><div class="magic-device-copy"><div class="magic-connection-steps" id="magicConnectionSteps"></div><div id="magicDeviceBody"></div></div><div class="magic-video magic-video--phone"><div class="vplayer vplayer--phone" data-video="magic-dos-dispositivos"></div></div></div>
+          </div>
+          <div id="magicFourthWallView" hidden>
+            <p data-magic="1962"></p>
+            <div class="magic-icon-tabs magic-icon-tabs--four" id="magicMechanicTabs" role="tablist" aria-label="Sistemas de ruptura de la cuarta pared"></div>
+            <div id="magicMechanicPanel" role="tabpanel"><div><h3 id="magicMechanicHeading"></h3><p id="magicMechanicDescription"></p></div><div class="magic-video"><div class="vplayer" id="magicMechanicVideo" data-video="magic-eventos-dinamicos"></div></div></div>
+          </div>
+          <div id="magicGameView" hidden><div class="magic-video"><div class="vplayer" data-video="magic-gameplay-general" data-title="Magic Birthday — gameplay"></div></div></div>
+        </div>
+        <div class="magic-ingredients magic-width" id="magicIngredients" role="tablist" aria-label="Explorar Magic Birthday"></div>
+        <p class="magic-ingredient-status" id="magicIngredientStatus" aria-live="polite" aria-atomic="true"></p>
+      </section>
+      <section class="magic-gallery" aria-label="Galería de Magic Birthday"><div class="photo-gallery" data-gallery="magic"></div></section>
+      <button class="magic-return" type="button" id="magicReturn" data-magic="1790"></button>
+    </div>
+  </section>
+
+  <section class="case ue-case" id="ultimoCase" data-case="ultimo-ensayo" aria-hidden="true" aria-labelledby="ueTitle" inert>
+    <div class="case__inner">
+      <img class="ue-divider" src="assets/ultimo/divider.webp" alt="" aria-hidden="true">
+      <div class="ue-hero">
+        <img class="ue-hero__scene" src="assets/ultimo/hero.webp" alt="Mateo, el violinista protagonista de El último ensayo" loading="lazy">
+        <img class="ue-hero__logo" src="assets/ultimo/logo.webp" alt="El último ensayo" loading="lazy">
+        <span class="ue-dust" aria-hidden="true"></span>
+        <button class="case-close" type="button" data-case-close data-k="common.close" data-attr="aria-label">×</button>
+      </div>
+      <article class="ue-info case-reveal">
+        <div class="ue-info__copy">
+          <h2 id="ueTitle" data-k="ultimo.title"></h2>
+          <p class="case-eyebrow" data-k="ultimo.stack"></p>
+          <p class="case-tagline" data-k="ultimo.tagline"></p>
+          <div class="case-body" data-k="ultimo.body"></div>
+          <p class="case-meta" data-k="ultimo.meta"></p>
+        </div>
+        <div class="vplayer" data-video="" data-title="El último ensayo"></div>
+      </article>
+      <article class="ue-role case-reveal">
+        <div class="ue-role__copy">
+          <h2 data-k="ultimo.roleKicker"></h2>
+          <p class="case-eyebrow" data-k="ultimo.roleTitle"></p>
+          <div class="case-body" data-k="ultimo.roleBody"></div>
+        </div>
+        <img class="ue-role__portrait" src="assets/ultimo/luisa-violin.webp" alt="Ilustración de Luisa tocando el violín" loading="lazy">
+      </article>
+      <section class="ue-resp" aria-labelledby="ueRespTitle">
+        <h2 id="ueRespTitle" class="case-reveal" data-k="ultimo.respTitle"></h2>
+        <div class="ue-book case-reveal" id="ueBook">
+          <div class="ue-book__tabs" role="tablist" id="ueBookTabs"></div>
+          <div class="ue-book__spread" id="ueBookSpread" aria-live="polite">
+            <div class="ue-page ue-page--left" id="ueLeft"></div>
+            <div class="ue-page ue-page--right" id="ueRight"></div>
+            <span class="ue-leaf" aria-hidden="true"></span>
+          </div>
+          <div class="ue-book__nav">
+            <button type="button" id="uePrev" data-k="common.prev" data-attr="aria-label">←</button>
+            <span id="uePageNumber"></span>
+            <button type="button" id="ueNext" data-k="common.next" data-attr="aria-label">→</button>
+          </div>
+        </div>
+        <p class="ue-credit case-reveal" data-k="ultimo.credit"></p>
+      </section>
+      <section class="ue-final case-final" aria-labelledby="ueFinalTitle">
+        <h2 id="ueFinalTitle" data-k="ultimo.finalTitle"></h2>
+        <div class="vplayer" data-video="" data-title="El último ensayo — gameplay"></div>
+      </section>
+      <button class="case-return" type="button" data-case-close><span data-k="common.back"></span> <b aria-hidden="true">↑</b></button>
+    </div>
+  </section>
+
+  <section class="case bw-case" id="bomberCase" data-case="bomberman" aria-hidden="true" aria-labelledby="bwTitle" inert>
+    <div class="case__inner">
+      <div class="bw-hero">
+        <img class="bw-hero__explosion" src="assets/bomber/explosion.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="bw-hero__map" id="bwHeroMap" aria-hidden="true"></div>
+        <img class="bw-hero__title" src="assets/bomber/title.webp" alt="BomberWoman" loading="lazy">
+        <button class="case-close" type="button" data-case-close data-k="common.close" data-attr="aria-label">×</button>
+      </div>
+      <article class="bw-info case-reveal">
+        <div class="bw-info__copy">
+          <h2 id="bwTitle" data-k="bomber.title"></h2>
+          <p class="case-eyebrow" data-k="bomber.stack"></p>
+          <p class="case-tagline" data-k="bomber.tech"></p>
+          <div class="case-body" data-k="bomber.body"></div>
+          <p class="case-meta" data-k="bomber.meta"></p>
+        </div>
+        <div class="vplayer" data-video="bomber-trailer" data-title="BomberWoman"></div>
+      </article>
+      <article class="bw-role" id="bwRole">
+        <img class="bw-role__portrait case-reveal" src="assets/bomber/luisa-confetti.webp" alt="Ilustración de Luisa con confeti y una bomba" loading="lazy">
+        <div class="bw-role__copy case-reveal">
+          <h2 data-k="bomber.roleKicker"></h2>
+          <p class="case-eyebrow" data-k="bomber.roleTitle"></p>
+          <div class="case-body" data-k="bomber.roleBody"></div>
+          <p class="bw-hint" data-k="bomber.roleHint"></p>
+        </div>
+        <div class="bw-heads" id="bwHeads"></div>
+      </article>
+      <section class="bw-map-section" aria-labelledby="bwMapTitle">
+        <header class="bw-map-head case-reveal">
+          <h2 id="bwMapTitle" data-k="bomber.mapTitle"></h2>
+          <p data-k="bomber.mapHint"></p>
+        </header>
+        <div class="bw-map" id="bwMap" role="group" aria-labelledby="bwMapTitle"></div>
+        <div class="bw-panel" id="bwPanel" hidden>
+          <div class="bw-panel__card" role="dialog" aria-modal="true" aria-labelledby="bwPanelTitle">
+            <button class="bw-panel__home" type="button" id="bwPanelHome" data-k="common.home" data-attr="aria-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 11.5h3V21h5.5v-6h3v6H19v-9.5h3z"/></svg></button>
+            <h3 data-k="bomber.mapTitle"></h3>
+            <p class="bw-panel__kicker" data-k="bomber.panelKicker"></p>
+            <p class="bw-panel__text" id="bwPanelText"><b id="bwPanelTitle"></b> <span id="bwPanelBody"></span></p>
+            <div class="vplayer" id="bwPanelVideo" data-video=""></div>
+          </div>
+        </div>
+      </section>
+      <section class="bw-final case-final" aria-labelledby="bwFinalTitle">
+        <h2 id="bwFinalTitle" data-k="bomber.finalTitle"></h2>
+        <div class="vplayer" data-video="bomber-gameplay" data-title="BomberWoman — gameplay"></div>
+      </section>
+      <button class="case-return" type="button" data-case-close><span data-k="common.back"></span> <b aria-hidden="true">↑</b></button>
+    </div>
+  </section>
+
+  <section class="case ot-case" id="otrosCase" data-case="otros" aria-hidden="true" aria-labelledby="otTitle" inert>
+    <div class="case__inner">
+      <header class="ot-head">
+        <h2 id="otTitle" data-k="otros.title"></h2>
+        <p class="case-tagline" data-k="otros.intro"></p>
+        <button class="case-close" type="button" data-case-close data-k="common.close" data-attr="aria-label">×</button>
+      </header>
+      <div id="otItems"></div>
+      <button class="case-return" type="button" data-case-close><span data-k="common.back"></span> <b aria-hidden="true">↑</b></button>
+    </div>
+  </section>
+
+  <section class="case ht-case" id="hotelCase" data-case="hotel" aria-hidden="true" aria-labelledby="htTitle" inert>
+    <div class="case__inner">
+      <button class="case-close" type="button" data-case-close data-k="common.close" data-attr="aria-label">×</button>
+      <div id="hotelBody"></div>
+      <button class="case-return" type="button" data-case-close><span data-k="common.back"></span> <b aria-hidden="true">↑</b></button>
+    </div>
+  </section>
+  <script src="js/content.js"></script>
+  <script src="js/video.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="data/magic-content.js"></script>
+  <script src="js/magic-birthday.js"></script>
+  <script src="js/cases-content.js"></script>
+  <script src="js/cases.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/hotel-content.js"></script>
+  <script src="js/hotel.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>

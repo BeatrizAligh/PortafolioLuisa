@@ -1,0 +1,72 @@
+{
+  "deviceBody": "Implementé una arquitectura Host–Client con Netcode for GameObjects y Unity Transport. El computador funciona como host y el celular detecta automáticamente la sesión dentro de la red local mediante broadcast.\nUna vez conectado, el teléfono actúa como interfaz complementaria y envía acciones al juego mediante Server RPCs. El computador procesa estos comandos y sincroniza eventos, notificaciones, audio y cambios de gameplay mediante Client RPCs y eventos de C#, sin depender de servidores externos ni conexión a Internet.",
+  "connectionSteps": [
+    "StartHost()",
+    "Publica sesión mediante broadcast LAN",
+    "El celuluar detecta la dirección IP y puerto",
+    "Configuracion de UnityTransport",
+    "StartClient()",
+    "Establece conexion",
+    "El celular envia acciones mediante RCP",
+    "El servidor valida y distribuye los eventos"
+  ],
+  "mechanicDescriptions": [
+    "Cambios en determinados elementos del juego para generar situaciones inesperadas.",
+    "El teléfono se convierte en una extensión del juego y permite recibir información que complementa lo que ocurre en PC.",
+    "El jugador encuentra información que se almacena como parte de la experiencia y puede utilizarse para seguir la investigación.",
+    "El juego puede crear o modificar elementos que hacen creer al jugador que algo está ocurriendo fuera de la aplicación."
+  ],
+  "mobileFrames": {
+    "2118": {
+      "name": "Frame 297",
+      "width": 399.0,
+      "height": 785.0
+    },
+    "2138": {
+      "name": "Frame 301",
+      "width": 399.0,
+      "height": 785.0
+    },
+    "2165": {
+      "name": "Frame 302",
+      "width": 399.0,
+      "height": 785.0
+    },
+    "2180": {
+      "name": "Frame 298",
+      "width": 399.0,
+      "height": 785.0
+    },
+    "2198": {
+      "name": "Frame 299",
+      "width": 399.0,
+      "height": 785.0
+    }
+  },
+  "assets": [
+    {
+      "node": 1896,
+      "size": [
+        913,
+        742
+      ],
+      "asset": "ingredients-creepy-background.webp"
+    },
+    {
+      "node": 1587,
+      "size": [
+        941,
+        1672
+      ],
+      "asset": "birthday-mobile-scene.webp"
+    },
+    {
+      "node": 1777,
+      "size": [
+        1536,
+        1024
+      ],
+      "asset": "clouds-full.webp"
+    }
+  ]
+}

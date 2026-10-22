@@ -1,0 +1,16 @@
+{
+  "292": "Mis responsabilidades",
+  "293": "Diseño e implementación de gameplay",
+  "294": "Diseñé y programé Mochipoderes, un modo de cartas basado en la construcción de mazos, la gestión de energía y las decisiones tácticas durante el combate.\nImplementé los sistemas de juego para los distintos modos disponibles.\nDesarrollé la lógica de las partidas contra la máquina, incluyendo el uso de mazos disponibles para este tipo de enfrentamiento.\nParticipé en la modificación de reglas, estadísticas de cartas y ciclo de batalla de Mochi Batallas.",
+  "395": "Mis responsabilidades",
+  "396": "Desarrollo de sistemas en Unity",
+  "397": "Implementé el sistema de navegación entre pantallas.\nDesarrollé tutoriales y guías paso a paso para acompañar al jugador.\nImplementé sistemas de personalización de personajes, fondos, volumen y efectos de sonido.\nDesarrollé el sistema de mochistickers asociados a las partidas.\nImplementé el registro de estadísticas de juego, incluyendo partidas totales, victorias, derrotas y empates por modalidad.\nDesarrollé el sistema de organización y gestión de mazos.\nImplementé los sistemas de bloqueo y desbloqueo de personajes, stickers y cartas.\nDesarrollé el sistema de premios y recompensas.",
+  "437": "Mis responsabilidades",
+  "438": "Integración visual y montaje de interfaz",
+  "439": "Monté las distintas ventanas y pantallas de la interfaz dentro de Unity.\nOrganicé los sprites y las spritesheets proporcionados por la diseñadora.\nConfiguré los Animator Controllers y ajusté las animaciones y sus transiciones para integrarlas en el juego.",
+  "479": "Trabajo en equipo",
+  "480": "Preparación para la integración con backend",
+  "481": "Dejé preparados los sistemas frontend para su conexión con los servicios de backend, cuyo desarrollo estuvo a cargo de otro integrante del equipo. Las funcionalidades sociales basadas en amigos y códigos de invitación, así como el acceso a mazos de otros jugadores, no formaron parte de mis responsabilidades de implementación.\nEl proyecto se desarrolló en colaboración con una diseñadora, una desarrolladora frontend —mi rol— y un desarrollador backend.",
+  "1503": "juego digital de cartas desarrollado como parte de una campaña de Yogo Yogo, inpirada en sus personajes y colección de carta coleccionables.\nCombina una experiencia de enfrentamientos accesible con un modo de contrucción de mazos y gestión estratégica de recursos.",
+  "1504": "2025 · dardranight studios Estado: finalizado y publicado"
+}
