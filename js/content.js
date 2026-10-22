@@ -7,7 +7,7 @@ window.PORTFOLIO_CONTENT = {
       tag1: "Creative Technologist", tag2: "Unity Gameplay Developer"
     },
     stats: { unity: "Años como Unity Dev", professional: "Años de experiencia profesional", ar: "Años como AR Dev" },
-    actions: { scroll: "Desliza para ver más", more: "Ver más", cv: "Descargar CV" },
+    actions: { scroll: "Desliza para ver más", more: "Ver más", cv: "Descargar CV", cvShort: "Descargar CV" },
     portfolio: { title: "Portafolio", kicker: "¿Qué deseas ver hoy?" },
     skills: { title: "Información de skills", kicker: "Perfil técnico", engines: "Motores", tools: "Herramientas y otros recursos" },
     constellation: { title: "Constelación de conocimiento", kicker: "Explora mi proceso", selected: "Núcleo" },
@@ -55,7 +55,7 @@ window.PORTFOLIO_CONTENT = {
       tag1: "Creative Technologist", tag2: "Unity Gameplay Developer"
     },
     stats: { unity: "Years as a Unity Dev", professional: "Years of professional experience", ar: "Years as an AR Dev" },
-    actions: { scroll: "Scroll to explore", more: "View more", cv: "Download résumé" },
+    actions: { scroll: "Scroll to explore", more: "View more", cv: "Download résumé", cvShort: "Download CV" },
     portfolio: { title: "Portfolio", kicker: "What would you like to see today?" },
     skills: { title: "Skills and expertise", kicker: "Technical profile", engines: "Engines", tools: "Tools and other resources" },
     constellation: { title: "Knowledge constellation", kicker: "Explore my process", selected: "Core" },

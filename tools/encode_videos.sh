@@ -62,4 +62,8 @@ enc nutririndes.mp4 ar-nutririndes 28 720 1M
 for n in 00-trailer 01-movimiento 02-bombas 03-enemigos 04-animaciones 05-gestion 06-transiciones 07-potenciadores 08-gameplay; do
   SRC_SAVE=$SRC; SRC=/d/Dardranight/Portafolio_videos/Bomberman/final; enc $n.mp4 bomber-${n#*-} 26 1920 3M; SRC=$SRC_SAVE
 done
+# El último ensayo (recorded and edited from the Unity project: D:/Dardranight/Portafolio_videos/UltimoEnsayo/final)
+for n in 00-trailer 01-mecanicas 02-gameplay; do
+  SRC_SAVE=$SRC; SRC=/d/Dardranight/Portafolio_videos/UltimoEnsayo/final; enc $n.mp4 ultimo-${n#*-} 26 1920 3M; SRC=$SRC_SAVE
+done
 echo "$(date +%T) done"; du -sh "$OUT" "$POS"

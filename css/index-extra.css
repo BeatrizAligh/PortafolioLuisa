@@ -23,3 +23,9 @@
 /* Hero title wraps like the design: "Desarrolladora de / videojuegos y / creativa" */
 @media (min-width:901px){.hero__copy h1{max-width:15ch}}
 @media (max-width:900px){.hero__copy h1{max-width:none;font-size:clamp(1.7rem,7.4vw,2.6rem)}}
+/* CV download button (replaces the social icons in the hero) */
+.cv-download{position:absolute;z-index:10;top:7rem;left:clamp(1.2rem,7vw,7.5rem);display:inline-flex;align-items:center;gap:.55rem;padding:.6rem 1.1rem .6rem .75rem;border:1px solid rgba(255,255,255,.45);border-radius:999px;background:rgba(19,12,51,.56);color:#fff;font:800 .78rem/1 Nunito,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;backdrop-filter:blur(8px);box-shadow:0 0 14px rgba(214,196,255,.25);transition:transform .25s,box-shadow .25s,border-color .25s}
+.cv-download svg{width:20px;height:20px}
+.cv-download:hover,.cv-download:focus-visible{transform:translateY(-2px);border-color:#fff;box-shadow:0 0 18px rgba(255,255,255,.6),0 0 30px rgba(173,120,255,.6)}
+@media (max-width:900px){.hero>.cv-download{position:relative;top:auto;left:auto;margin:0 0 1.4rem}}
+@media (min-width:901px){.hero .hero__copy h1{max-width:16ch}}

@@ -20,6 +20,8 @@
     });
     renderBook(false);
     renderOthers();
+    const stores = t('ultimo.stores') || [];
+    $('#ueStores').innerHTML = `<span>${t('ultimo.storesTitle')}</span>` + stores.map(st => `<a class="ue-store" href="${st.url}" target="_blank" rel="noreferrer">${st.label} <b aria-hidden="true">↗</b></a>`).join('');
     if (activePower !== null && !$('#bwPanel').hidden) fillPanel(activePower);
     $$('.bw-power').forEach((button, index) => button.setAttribute('aria-label', t('bomber.powers')[Number(button.dataset.power)].title));
   }
@@ -119,7 +121,7 @@
       if (para !== null) { html += '</p>'; para = null; }
       if (block.li) { if (!open) { html += '<ul>'; open = true; } html += `<li>${block.li}</li>`; return; }
       if (open) { html += '</ul>'; open = false; }
-      html += block.video ? '<div class="vplayer" data-video="" data-title="El último ensayo"></div>' : block.html;
+      html += block.video ? '<div class="vplayer" data-video="ultimo-mecanicas" data-title="El último ensayo — sistemas"></div>' : block.html;
     });
     return html + (para !== null ? '</p>' : '') + (open ? '</ul>' : '');
   }
@@ -412,7 +414,9 @@
     openPanel(power);
   });
   $('#bwPanelHome').addEventListener('click', closePanel);
-  $('#bwPanel').addEventListener('click', event => { if (!event.target.closest('.bw-panel__card')) closePanel(); });
+  // close only when the backdrop itself is clicked (the video player swaps its button for a <video>,
+  // so a click inside the card can arrive with a target that is no longer in the page)
+  $('#bwPanel').addEventListener('click', event => { if (event.target === event.currentTarget) closePanel(); });
   document.addEventListener('keydown', event => { if (event.key === 'Escape') closePanel(); });
   matchMedia('(max-width: 700px)').addEventListener('change', () => { if (mapBuilt) buildMap(true); });
 

@@ -16,11 +16,14 @@
     return `<div class="sc-phone"><div class="vplayer vplayer--phone" data-video="${m.video}" data-title="${title}"${m.ratio ? ` style="--vp-ratio:${m.ratio}"` : ''}></div></div>`;
   }
 
-  function copyBlock(section, copy, { features = true } = {}) {
+  function copyBlock(section, copy, { features = true, heading = true } = {}) {
     const logo = section.logo ? `<img class="sc-logo" src="${section.logo}" alt="" loading="lazy">` : '';
     const list = features && section.features ? featureBlock(section, copy) : '';
-    const link = section.link ? `<a class="sc-cta" href="${section.link}" target="_blank" rel="noreferrer">${copy.cta} <span aria-hidden="true">›</span></a>` : '';
-    return `${logo}<h2 id="${section.id}-title">${section.title}</h2><p class="case-eyebrow sc-stack">${section.stack}</p><div class="case-body">${paragraphs(section.body)}</div>${list}<p class="case-meta">${section.meta}</p>${link}`;
+    // link: one URL, or a list of { label, url } (e.g. the three Claro Peru banners)
+    const links = Array.isArray(section.link) ? section.link : section.link ? [{ label: '', url: section.link }] : [];
+    const link = links.length ? `<div class="sc-ctas">${links.map(l => `<a class="sc-cta" href="${l.url}" target="_blank" rel="noreferrer">${copy.cta}${l.label ? ' · ' + l.label : ''} <span aria-hidden="true">›</span></a>`).join('')}</div>` : '';
+    const head = heading ? `<h2 id="${section.id}-title">${section.title}</h2><p class="case-eyebrow sc-stack">${section.stack}</p>` : '';
+    return `${logo}${head}<div class="case-body">${paragraphs(section.body)}</div>${list}<p class="case-meta">${section.meta}</p>${link}`;
   }
   const featureBlock = (section, copy) => `<div class="sc-features"><h3>${copy.featuresTitle}</h3><ul>${section.features.map(item => `<li>${item}</li>`).join('')}</ul></div>`;
 
@@ -36,10 +39,18 @@
         </div></section>`;
     }
     if (section.theme === 'dino') {
+      // Design: centred logos + copy, then a fan of five phones (left) next to the video frame (right).
+      const fan = [1, 2, 5, 4, 3].map((i, k) => `<img class="sc-fan__phone sc-fan__phone--${k + 1}" src="assets/ar/dinomochis-phone-${i}.webp" alt="">`).join('');
       return `${open}
-        <header class="sc-dino-head sc-reveal"><img class="sc-dino-logo" src="assets/ar/dinomochis-logo.webp" alt="Alpina Mochisaurios" loading="lazy"><h2 id="${section.id}-title">${section.title}</h2><p class="case-eyebrow sc-stack">${section.stack}</p></header>
-        <div class="sc-inner"><div class="sc-copy sc-reveal"><div class="case-body">${paragraphs(section.body)}</div><p class="case-meta">${section.meta}</p></div><div class="sc-media sc-reveal">${media(section)}</div></div>
-        <div class="sc-dino-world" aria-hidden="true">${[1, 2, 3, 4, 5].map(i => `<img class="sc-dino-phone sc-dino-phone--${i}" src="assets/ar/dinomochis-phone-${i}.webp" alt="" loading="lazy">`).join('')}</div>
+        <div class="sc-dino-center sc-reveal">
+          <img class="sc-dino-logo" src="assets/ar/dinomochis-logo.webp" alt="Alpina Mochisaurios" loading="lazy">
+          <h2 id="${section.id}-title">${section.title}</h2><p class="case-eyebrow sc-stack">${section.stack}</p>
+          ${copyBlock(section, copy, { heading: false })}
+        </div>
+        <div class="sc-dino-stage">
+          <div class="sc-fan sc-reveal" aria-hidden="true">${fan}</div>
+        </div>
+        <div class="sc-dino-clouds" aria-hidden="true"></div>
       </section>`;
     }
     const logo = section.theme === 'flame' ? '<img class="sc-badge" src="assets/web/flame-logo.webp" alt="The Flame Company" loading="lazy">'

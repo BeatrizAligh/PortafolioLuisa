@@ -89,6 +89,9 @@
     const mechanicVideo=['magic-eventos-dinamicos','magic-comunicacion-telefono','','magic-interaccion-dispositivo'][mechanic];
     const mechanicSlot=document.querySelector('#magicMechanicVideo');
     if(window.VideoSlots&&mechanicSlot.dataset.video!==mechanicVideo) window.VideoSlots.set(mechanicSlot,mechanicVideo);
+    // no video for this mechanic yet: hide the empty slot instead of showing a placeholder
+    mechanicSlot.closest('.magic-video').hidden=!mechanicVideo;
+    document.querySelector('#magicMechanicPanel').classList.toggle('is-text-only',!mechanicVideo);
     const selector=document.querySelector('#magicMobileSelector');
     selector.hidden=ingredient!==0 && ingredient!==2;
     document.querySelector('#magicMobileIcon').src=asset+'icon-'+(ingredient===2?mechanicIcons[mechanic]:responsibilityIcons[responsibility])+'.svg?v=20261019';
